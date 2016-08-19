@@ -9,6 +9,7 @@ import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.common.http.NimHttpClient;
 import com.tarot.sdfnash.tarot.config.DemoServers;
 import com.tarot.sdfnash.tarot.registnew.Model.CommentDetailModel;
+import com.tarot.sdfnash.tarot.registnew.Model.CommentListModel;
 import com.tarot.sdfnash.tarot.registnew.Model.LoginModel;
 import com.tarot.sdfnash.tarot.registnew.Model.RegistModel;
 import com.tarot.sdfnash.tarot.registnew.Model.TarotListModel;
@@ -534,7 +535,7 @@ public class RegistHttpClient {
 
 
     //接口9
-    public void clistCode(int t_id,int s_id,int pages,int num, final ClistHttpCallBack<Void> callback) {
+    public void clistCode(int t_id,int s_id,int pages,int num, final ClistHttpCallBack<CommentListModel.Data> callback) {
         String url = DemoServers.apiServer() + "comment/clist";
 
 
@@ -564,7 +565,11 @@ public class RegistHttpClient {
                     JSONObject resObj = JSONObject.parseObject(response);
                     int resCode = resObj.getIntValue(RESULT_KEY_RES);
                     if (resCode == RESULT_CODE_SUCCESS) {
-                        callback.onSuccess(null);
+                        CommentListModel model = new CommentListModel();
+                        model.setData(resObj.getObject("data", CommentListModel.Data.class));
+                        model.setMsg(resObj.getString("msg"));
+                        model.setCode(resCode);
+                        callback.onSuccess(model.getData());
                     } else {
                         String error = resObj.getString(RESULT_KEY_ERROR_MSG);
                         callback.onFailed(resCode, error);
@@ -612,6 +617,7 @@ public class RegistHttpClient {
                     JSONObject resObj = JSONObject.parseObject(response);
                     int resCode = resObj.getIntValue(RESULT_KEY_RES);
                     if (resCode == RESULT_CODE_SUCCESS) {
+
                         callback.onSuccess(null);
                     } else {
                         String error = resObj.getString(RESULT_KEY_ERROR_MSG);

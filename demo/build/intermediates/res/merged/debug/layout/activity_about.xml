@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.taluo.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_logo"
+        android:layout_marginTop="49dp"
+        android:id="@+id/t1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t2"
+        android:text="        塔罗说是专业的塔罗牌在线咨询平台，以专业的塔罗师团队为依托，用互联网思维改良行业基因，只为提供真正优质服务而努力。一切以咨询者为核心，塔罗师的等级与排名完全取决于客观评价，筛选真正优秀塔罗师为你服务，你的评价就是塔罗师等级的唯一标准。用心聆听，善言善行，我们在塔罗的道路上从未止步！"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="53dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t3"
+        android:text="        塔罗说 - 纠结吗？塔罗一下吧！"
+        android:layout_below="@+id/t2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t4"
+        android:text="        客服QQ：63096911"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/t3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

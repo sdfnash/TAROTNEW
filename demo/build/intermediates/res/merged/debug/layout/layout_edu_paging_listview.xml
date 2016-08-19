@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tarot.sdfnash.tarot.registnew.View.CustomerSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edu_paging_listview_refreshViewLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tarot.sdfnash.tarot.registnew.View.CustomerListView
+            android:id="@+id/edu_paging_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="@android:color/transparent"
+            android:divider="@color/color_gray_cbd0d8"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+
+        <com.tarot.sdfnash.tarot.registnew.View.EmptyLayout
+            android:id="@+id/edu_paging_listview_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:id="@+id/edu_paging_listview_top_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+    </FrameLayout>
+
+</com.tarot.sdfnash.tarot.registnew.View.CustomerSwipeRefreshLayout>

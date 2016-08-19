@@ -14,7 +14,9 @@ public class MainMessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_message);
         tId=getIntent().getStringExtra("tId");
+        sId=getIntent().getStringExtra("sId");
         final MainMessageFragment f=new MainMessageFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.main_message_fragment,f).commit();
         Handler h=new Handler();
         h.post(new Runnable() {
             @Override
@@ -22,6 +24,6 @@ public class MainMessageActivity extends AppCompatActivity {
                 f.setCurrentItem(1);
             }
         });
-        getSupportFragmentManager().beginTransaction().add(R.id.main_message_fragment,f).commit();
+
     }
 }

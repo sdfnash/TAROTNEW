@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/img_avatar"
+    android:src="@drawable/head_icon_1"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nickname"
+        android:layout_toRightOf="@id/img_avatar"
+        android:text="111"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_comment"
+        android:padding="10dp"
+
+        android:layout_below="@id/img_avatar"
+        android:text="11111111111111111111"
+        />
+    <Button
+        android:id="@+id/btn_good_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/selectable_blue_trans_radius"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="修改评论"
+        android:textColor="@drawable/selectable_text_color_white_blue"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/btn_delete_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selectable_blue_trans_radius"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="删除评论"
+        android:textColor="@drawable/selectable_text_color_white_blue"
+        android:textSize="16dp" />
+</RelativeLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/layout_empty_pager_img"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/nim_messages_list_empty_bg" />
+
+    <TextView
+        android:id="@+id/layout_empty_pager_txt"
+        android:textSize="14sp"
+        android:textColor="@color/color_gray_d9d9d9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_empty_pager_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        tools:text="没有任何数据" />
+
+    <Button
+        android:id="@+id/layout_empty_pager_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_empty_pager_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:background="@color/color_blue_0888ff"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingLeft="54dip"
+        android:paddingRight="54dip"
+        android:paddingTop="8dip"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
