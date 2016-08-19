@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/title"
+
+        android:paddingTop="15dp">
+
+        <com.netease.sdfnash.uikit.common.ui.imageview.CircleImageView
+            android:id="@+id/img_service_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_icon_1" />
+
+        <TextView
+            android:id="@+id/tv_service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_service_avatar"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="111"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/img_service_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_rts_send" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_red_ccfa3c55"></View>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/point_layout"
+        android:layout_below="@+id/head">
+
+        <TextView
+            android:id="@+id/tv_total_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="5.00"
+            android:textColor="@color/color_red_ccfa3c55"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_total_comment"
+            android:layout_marginLeft="15dp"
+            android:text="近77天评分"
+            android:textColor="@color/grey_1" />
+
+        <LinearLayout
+            android:id="@+id/layout_title_four"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/tv_comment_time"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="响应速度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="服务态度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="准确程度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="帮助力度" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rate_layout"
+            android:layout_toRightOf="@+id/layout_title_four"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/speed_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp" />
+            <RatingBar
+                android:id="@+id/attitude_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp" />
+            <RatingBar
+                android:id="@+id/right_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp" />
+            <RatingBar
+                android:id="@+id/help_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rate_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_point_speed"
+                android:textSize="13sp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="响应速度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="13sp"
+                android:paddingTop="8dp"
+                android:id="@+id/tv_point_attitude"
+                android:text="服务态度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="13sp"
+                android:id="@+id/tv_point_right"
+                android:paddingTop="8dp"
+                android:text="准确程度" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:textSize="13sp"
+                android:id="@+id/tv_point_help"
+                android:paddingTop="8dp"
+                android:text="帮助力度" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_insult"
+        android:background="@color/text_is_select"
+        android:text="立即咨询"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <com.tarot.sdfnash.tarot.registnew.View.PagingListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listView"
+        android:layout_below="@+id/point_layout"
+        android:layout_above="@+id/btn_insult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.tarot.sdfnash.tarot.registnew.View.PagingListView>
+
+</RelativeLayout>

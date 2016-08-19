@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/viewpager_ll_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <!--android:background="@drawable/shape_gray_bottom_white_bg"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+           >
+            <!--子类在这里添加自己的view-->
+            <ViewStub
+                android:id="@+id/viewpager_vs_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <com.tarot.sdfnash.tarot.registnew.View.indicator.PageTabLabel
+            android:id="@+id/viewpager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/viewpager_ll_indicator"
+        android:background="@color/grey_3" />
+
+    <com.tarot.sdfnash.tarot.registnew.View.UnScrollViewPager
+        android:id="@+id/viewpager_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewpager_ll_indicator"
+        android:layout_marginTop="1px"/>
+
+
+</RelativeLayout>
