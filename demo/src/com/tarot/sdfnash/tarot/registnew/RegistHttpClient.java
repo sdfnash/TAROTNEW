@@ -582,7 +582,7 @@ public class RegistHttpClient {
     }
 
     //接口10
-    public void addCode(int uid,String ticket,int o_id,String comment,int star1,int star2,int star3,int star4,int want, final AddHttpCallBack<Void> callback) {
+    public void addCode(String uid,String ticket,int o_id,String comment,int star1,int star2,int star3,int star4,int want,int haoping, final AddHttpCallBack<Void> callback) {
         String url = DemoServers.apiServer() + "comment/add";
 
 
@@ -598,7 +598,8 @@ public class RegistHttpClient {
                 .append("star2").append("=").append(star2).append("&")
                 .append("star3").append("=").append(star3).append("&")
                 .append("star4").append("=").append(star4).append("&")
-                .append("want").append("=").append(want);
+                .append("want").append("=").append(want)
+                .append("haoping").append("=").append(haoping);
 
         String bodyString = body.toString();
 
@@ -673,7 +674,7 @@ public class RegistHttpClient {
     }
 
     //接口12
-    public void editCode(int uid,String ticket,int cmt_id,String comment,int star1,int star2,int star3,int star4,int want, final EditHttpCallBack<Void> callback) {
+    public void editCode(String uid,String ticket,int cmt_id,String comment,int star1,int star2,int star3,int star4,int want,int haoping, final EditHttpCallBack<Void> callback) {
         String url = DemoServers.apiServer() + "comment/edit";
 
 
@@ -689,7 +690,8 @@ public class RegistHttpClient {
                 .append("star2").append("=").append(star2).append("&")
                 .append("star3").append("=").append(star3).append("&")
                 .append("star4").append("=").append(star4).append("&")
-                .append("want").append("=").append(want);
+                .append("want").append("=").append(want)
+                .append("haoping").append("=").append(haoping);
 
         String bodyString = body.toString();
 
@@ -722,7 +724,7 @@ public class RegistHttpClient {
 
 
     //接口13 get comment detail
-    public void detialCode(int uid,String ticket,int cmt_id, final DeleteHttpCallBack<CommentDetailModel.DataBean> callback) {
+    public void detialCode(String uid,String ticket,int cmt_id, final DeleteHttpCallBack<CommentDetailModel.DataBean> callback) {
         String url = DemoServers.apiServer() + "comment/detial";
 
 

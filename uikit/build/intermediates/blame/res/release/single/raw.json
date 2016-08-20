@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/release/raw/audio_end_tip.wav",
-        "source": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/res/raw/audio_end_tip.wav"
+        "merged": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\release\\raw\\audio_end_tip.wav",
+        "source": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\res\\raw\\audio_end_tip.wav"
+    },
+    {
+        "merged": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\release\\raw\\audio_end_tip.wav",
+        "source": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\res\\raw\\audio_end_tip.wav"
     }
 ]

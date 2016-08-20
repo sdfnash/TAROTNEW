@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/release/drawable-v23/abc_control_background_material.xml",
-        "source": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/drawable-v23/abc_control_background_material.xml"
+        "merged": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\release\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\release\\drawable-v23\\abc_control_background_material.xml",
+        "source": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]

@@ -1,5 +1,6 @@
 package com.tarot.sdfnash.tarot.registnew.fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import com.netease.sdfnash.uikit.common.fragment.TFragment;
 import com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView;
 import com.tarot.sdfnash.tarot.R;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.registnew.Model.CommentListModel;
 import com.tarot.sdfnash.tarot.registnew.Model.CommentShowModel;
 import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
@@ -223,6 +225,16 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
 
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode== Activity.RESULT_OK){
+            if(requestCode==0x01){
+                refreshData();
+            }
+        }
+    }
+
     public class CommentAdapter extends AbstractAdapter<CommentShowModel> {
 
         public CommentAdapter(Context context) {
@@ -235,7 +247,7 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
         }
 
         @Override
-        public void initView(int position, View convertView, CommentShowModel item) {
+        public void initView(int position, View convertView, final CommentShowModel item) {
             HeadImageView headImageView = (HeadImageView) convertView.findViewById(R.id.img_avatar);
             TextView mTvName = (TextView) convertView.findViewById(R.id.tv_nickname);
             TextView mTvComment = (TextView) convertView.findViewById(R.id.tv_comment);
@@ -246,18 +258,21 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
                 public void onClick(View v) {
                     Intent i = new Intent(getActivity(), CommitCommentActivity.class);
                     i.putExtra("tId", tID);
+                    i.putExtra("cmtId",item.getId());
+                    startActivityForResult(i,0x01);
                 }
             });
             mBtnDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                   //// TODO: 16/8/20  
                     refreshData();
                 }
             });
             headImageView.loadBuddyAvatar(item.getPhoto_s());
             mTvName.setText(item.getNickname());
             mTvComment.setText(item.getComment());
-            if (item.getU_id().equals("1")) {
+            if (item.getU_id().equals(Preferences.getUserAccount())) {
                 mBtnChange.setVisibility(View.GONE);
                 mBtnDelete.setVisibility(View.GONE);
             } else {

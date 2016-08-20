@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/androidTest/debug/menu/contacts_search_menu.xml",
-        "source": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/bundles/debug/res/menu/contacts_search_menu.xml"
+        "merged": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\contacts_search_menu.xml",
+        "source": "C:\\Users\\Liuyi\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\bundles\\debug\\res\\menu\\contacts_search_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\res\\merged\\androidTest\\debug\\menu\\contacts_search_menu.xml",
+        "source": "C:\\Users\\bjhl\\Desktop\\nim_demo\\nim_demo\\nim_demo\\uikit\\build\\intermediates\\bundles\\debug\\res\\menu\\contacts_search_menu.xml"
     }
 ]
