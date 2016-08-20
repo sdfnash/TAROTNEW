@@ -40,7 +40,7 @@
                     android:gravity="center_vertical"
                     android:text="塔罗师XX"
                     android:textColor="@color/text_is_select"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
 
                 <ImageView
                     android:id="@+id/tarot_star"

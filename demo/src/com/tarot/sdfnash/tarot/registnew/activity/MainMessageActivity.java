@@ -8,14 +8,18 @@ import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.registnew.fragment.MainMessageFragment;
 
 public class MainMessageActivity extends AppCompatActivity {
-    private String tId,sId;
+    private String tId,sId,yx_accid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_message);
         tId=getIntent().getStringExtra("tId");
         sId=getIntent().getStringExtra("sId");
+        yx_accid=getIntent().getStringExtra("yx_accid");
         final MainMessageFragment f=new MainMessageFragment();
+        f.settId(tId);
+        f.setsId(sId);
+        f.setYx_accid(yx_accid);
         getSupportFragmentManager().beginTransaction().add(R.id.main_message_fragment,f).commit();
         Handler h=new Handler();
         h.post(new Runnable() {

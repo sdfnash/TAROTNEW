@@ -19,6 +19,8 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
 
     private static final String TAG = MainMessageFragment.class.getSimpleName();
 
+    public String tId,sId,yx_accid;
+
     public static final int TAB_MESSAGE = 0;
     public static final int TAB_STUDENT = 1;
     public static final int TAB_COUNT = 2;
@@ -62,7 +64,8 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
             case TAB_STUDENT: {
                 if (tabs[TAB_STUDENT] == null) {
                     tabs[TAB_STUDENT] = new MainCommentFragment();
-
+                    ( (MainCommentFragment) tabs[TAB_STUDENT]).setTID(tId);
+                    ( (MainCommentFragment) tabs[TAB_STUDENT]).setTls_accid(yx_accid);
                 }
                 return tabs[TAB_STUDENT];
             }
@@ -86,6 +89,7 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
 //        mTvContract = (ImageView) getView().findViewById(R.id.img_right_contract);
 //        mTvContract.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -144,6 +148,30 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
             }
         });
         return vuew;
+    }
+
+    public String getsId() {
+        return sId;
+    }
+
+    public void setsId(String sId) {
+        this.sId = sId;
+    }
+
+    public String gettId() {
+        return tId;
+    }
+
+    public void settId(String tId) {
+        this.tId = tId;
+    }
+
+    public String getYx_accid() {
+        return yx_accid;
+    }
+
+    public void setYx_accid(String yx_accid) {
+        this.yx_accid = yx_accid;
     }
 
     @Override

@@ -158,6 +158,8 @@ public class FindingFragment extends MainTabFragment {
                 public void onClick(View v) {
                     Intent i=new Intent(getActivity(), MainMessageActivity.class);
                     i.putExtra("tId",tarotList.get(position).getId());
+                    i.putExtra("yx_accid",tarotList.get(position).getYx_accid());
+
                     startActivity(i);
                 }
             });
