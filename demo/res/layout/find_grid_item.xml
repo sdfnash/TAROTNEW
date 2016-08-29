@@ -45,12 +45,11 @@
                 <ImageView
                     android:id="@+id/tarot_star"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:scaleType="centerInside"
+                    android:layout_height="wrap_content"
                     android:layout_alignBottom="@id/tarot_head"
                     android:layout_alignLeft="@id/tarot_name"
                     android:layout_below="@id/tarot_name"
-                    android:src="@drawable/ic_stat_01" />
+                    android:src="@drawable/ic_stat_05" />
             </LinearLayout>
         </RelativeLayout>
 

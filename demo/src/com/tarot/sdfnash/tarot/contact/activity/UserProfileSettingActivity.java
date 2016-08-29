@@ -103,7 +103,11 @@ public class UserProfileSettingActivity extends UI implements View.OnClickListen
         phoneLayout = findView(R.id.phone_layout);
         emailLayout = findView(R.id.email_layout);
         signatureLayout = findView(R.id.signature_layout);
-
+        genderLayout.setVisibility(View.GONE);
+        birthLayout.setVisibility(View.GONE);
+        phoneLayout.setVisibility(View.GONE);
+        emailLayout.setVisibility(View.GONE);
+        signatureLayout.setVisibility(View.GONE);
         ((TextView) nickLayout.findViewById(R.id.attribute)).setText(R.string.nickname);
         ((TextView) genderLayout.findViewById(R.id.attribute)).setText(R.string.gender);
         ((TextView) birthLayout.findViewById(R.id.attribute)).setText(R.string.birthday);

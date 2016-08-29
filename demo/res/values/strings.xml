@@ -351,4 +351,6 @@
 
     <string name="main_message_title_message">服务</string>
     <string name="main_message_title_student">评价</string>
+    <string name="my_comment">我的评价</string>
+    <string name="my_order">我的订单</string>
 </resources>

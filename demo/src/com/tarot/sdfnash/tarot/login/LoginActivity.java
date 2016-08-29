@@ -18,15 +18,12 @@ import android.view.View.OnKeyListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tarot.sdfnash.tarot.DemoCache;
-import com.tarot.sdfnash.tarot.R;
-import com.tarot.sdfnash.tarot.config.preference.Preferences;
-import com.tarot.sdfnash.tarot.config.preference.UserPreferences;
-import com.tarot.sdfnash.tarot.main.activity.MainActivity;
-import com.tarot.sdfnash.tarot.registnew.Model.LoginModel;
-import com.tarot.sdfnash.tarot.registnew.Model.RegistModel;
-import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
-import com.tarot.sdfnash.tarot.registnew.TimeDownButton;
+import com.netease.nimlib.sdk.AbortableFuture;
+import com.netease.nimlib.sdk.NIMClient;
+import com.netease.nimlib.sdk.RequestCallback;
+import com.netease.nimlib.sdk.auth.AuthService;
+import com.netease.nimlib.sdk.auth.ClientType;
+import com.netease.nimlib.sdk.auth.LoginInfo;
 import com.netease.sdfnash.uikit.cache.DataCacheManager;
 import com.netease.sdfnash.uikit.common.activity.UI;
 import com.netease.sdfnash.uikit.common.ui.dialog.DialogMaker;
@@ -40,12 +37,15 @@ import com.netease.sdfnash.uikit.model.ToolBarOptions;
 import com.netease.sdfnash.uikit.permission.MPermission;
 import com.netease.sdfnash.uikit.permission.annotation.OnMPermissionDenied;
 import com.netease.sdfnash.uikit.permission.annotation.OnMPermissionGranted;
-import com.netease.nimlib.sdk.AbortableFuture;
-import com.netease.nimlib.sdk.NIMClient;
-import com.netease.nimlib.sdk.RequestCallback;
-import com.netease.nimlib.sdk.auth.AuthService;
-import com.netease.nimlib.sdk.auth.ClientType;
-import com.netease.nimlib.sdk.auth.LoginInfo;
+import com.tarot.sdfnash.tarot.DemoCache;
+import com.tarot.sdfnash.tarot.R;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
+import com.tarot.sdfnash.tarot.config.preference.UserPreferences;
+import com.tarot.sdfnash.tarot.main.activity.MainActivity;
+import com.tarot.sdfnash.tarot.registnew.Model.LoginModel;
+import com.tarot.sdfnash.tarot.registnew.Model.RegistModel;
+import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
+import com.tarot.sdfnash.tarot.registnew.TimeDownButton;
 
 /**
  * 登录/注册界面
@@ -298,12 +298,14 @@ public class LoginActivity extends UI implements OnKeyListener {
         // 如果开发者直接使用这个demo，只更改appkey，然后就登入自己的账户体系的话，需要传入同步到云信服务器的token，而不是用户密码。
         account_tarot = loginAccountEdit.getEditableText().toString();
         password_tarot = loginPasswordEdit.getEditableText().toString();
+        password_tarot = MD5.getStringMD5(password_tarot);
         // final String token = tokenFromPassword(loginPasswordEdit.getEditableText().toString());
         // 登录
         RegistHttpClient.getInstance().loginCode(account_tarot, password_tarot, new RegistHttpClient.LoginHttpCallback<LoginModel.DataBean>() {
             @Override
             public void onSuccess(LoginModel.DataBean dataBean) {
                 account_tarot = dataBean.getAccount();
+                id=dataBean.getId();
                 password_tarot = dataBean.getPassword();
                 yx_accid = dataBean.getYx_accid();
                 yx_token = dataBean.getYx_token();
@@ -318,7 +320,7 @@ public class LoginActivity extends UI implements OnKeyListener {
 
                         onLoginDone();
                         DemoCache.setAccount(account_tarot, yx_accid);
-                        saveLoginInfo(account_tarot, MD5.getStringMD5(password_tarot), yx_accid, yx_token);
+                        saveLoginInfo(account_tarot,id,password_tarot, yx_accid, yx_token);
 
                         // 初始化消息提醒
                         NIMClient.toggleNotification(UserPreferences.getNotificationToggle());
@@ -332,9 +334,16 @@ public class LoginActivity extends UI implements OnKeyListener {
                         // 构建缓存
                         DataCacheManager.buildDataCacheAsync();
 
+//                        if(!TextUtils.isEmpty(Preferences.getKeyUserNickname())&&!TextUtils.isEmpty(Preferences.getUserUsePhoto())){
+//                            // 进入主界面
+//                            MainActivity.start(LoginActivity.this, null);
+//                            finish();
+//                        }else{
+//                            UserInfoActivity.startFromLogin(LoginActivity.this,null);
+//                        }
+
                         // 进入主界面
                         MainActivity.start(LoginActivity.this, null);
-                        finish();
                     }
 
                     @Override
@@ -371,8 +380,9 @@ public class LoginActivity extends UI implements OnKeyListener {
         DialogMaker.dismissProgressDialog();
     }
 
-    private void saveLoginInfo(final String account, final String token, final String account_yx, final String token_yx) {
+    private void saveLoginInfo(final String account,final String  uId, final String token, final String account_yx, final String token_yx) {
         Preferences.saveUserAccount(account);
+        Preferences.saveUserID(uId);
         Preferences.saveUserToken(token);
         Preferences.saveYXAccount(account_yx);
         Preferences.saveYXToken(token_yx);

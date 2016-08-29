@@ -17,5 +17,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/tabs" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/grey_1"
+    android:layout_above="@+id/tabs"
+    ></View>
 
 </RelativeLayout>

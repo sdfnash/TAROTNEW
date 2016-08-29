@@ -12,7 +12,7 @@
         <!--android:background="@drawable/shape_gray_bottom_white_bg"-->
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
            >
             <!--子类在这里添加自己的view-->
             <ViewStub

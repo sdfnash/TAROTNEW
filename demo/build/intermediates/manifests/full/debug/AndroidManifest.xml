@@ -47,6 +47,21 @@
     <!-- 接受SDK消息广播权限， 第三方APP接入时，请将com.netease.sdfnash.tarot替换为自己的包名 -->
     <uses-permission android:name="com.netease.sdfnash.tarot.permission.RECEIVE_MSG" />
 
+    <!-- 通用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 银联需要的权限 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- 百度支付需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
         android:name="com.tarot.sdfnash.tarot.NimApplication"
         android:allowBackup="true"
@@ -354,10 +369,37 @@
 
         <activity android:name="com.tarot.sdfnash.tarot.login.ForgetPasswordActivity" />
         <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.CommitCommentActivity" />
-        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.AboutActivity" >
-        </activity>
-        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.MainMessageActivity" >
-        </activity>
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.AboutActivity" />
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.MainMessageActivity" />
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.UserInfoActivity" />
+
+        <!-- Ping++ SDK -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付 -->
+        <activity-alias
+            android:name="com.tarot.sdfnash.tarot.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.ClientSDKActivity" />
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.MyCommentActivity" />
+        <activity android:name="com.tarot.sdfnash.tarot.registnew.activity.OrderActivity" />
         <!-- 会话窗口 -->
         <!--
              UI组件中包含了语音选文字功能，该界面是全屏显示，为了视觉上的美观，该界面主题ActionBar使用Overlay模式。
@@ -374,8 +416,7 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 群聊 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群聊 -->
         <activity
             android:name="com.netease.sdfnash.uikit.team.activity.NormalTeamInfoActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -423,16 +464,14 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 联系人选择器 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 联系人选择器 -->
         <activity
             android:name="com.netease.sdfnash.uikit.contact_selector.activity.ContactSelectActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/contact_selector"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
- <!-- 照片选择 -->
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 照片选择 -->
         <activity
             android:name="com.netease.sdfnash.uikit.common.media.picker.activity.PickImageActivity"
             android:screenOrientation="portrait"
@@ -461,8 +500,7 @@
             android:label="@string/input_panel_take"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 视频 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 视频 -->
         <activity
             android:name="com.netease.sdfnash.uikit.session.activity.CaptureVideoActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -473,8 +511,7 @@
             android:name="com.netease.sdfnash.uikit.session.activity.WatchVideoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/video_play"
-            android:theme="@style/DarkTheme" />
- <!-- 查看大图 -->
+            android:theme="@style/DarkTheme" /> <!-- 查看大图 -->
         <activity
             android:name="com.netease.sdfnash.uikit.session.activity.WatchMessagePictureActivity"
             android:configChanges="keyboardHidden"

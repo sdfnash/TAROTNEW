@@ -5,6 +5,8 @@ import android.content.pm.PackageManager;
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
+import com.netease.sdfnash.uikit.common.util.log.LogUtil;
+import com.netease.sdfnash.uikit.common.util.string.MD5;
 import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.common.http.NimHttpClient;
 import com.tarot.sdfnash.tarot.config.DemoServers;
@@ -13,9 +15,9 @@ import com.tarot.sdfnash.tarot.registnew.Model.CommentListModel;
 import com.tarot.sdfnash.tarot.registnew.Model.LoginModel;
 import com.tarot.sdfnash.tarot.registnew.Model.RegistModel;
 import com.tarot.sdfnash.tarot.registnew.Model.TarotListModel;
-import com.netease.sdfnash.uikit.common.util.log.LogUtil;
-import com.netease.sdfnash.uikit.common.util.string.MD5;
+import com.tarot.sdfnash.tarot.registnew.Model.UpLoadModel;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -146,6 +148,11 @@ public class RegistHttpClient {
         void onFailed(int code, String errorMsg);
     }
 
+    public interface MyClistHttpCallBack<T> {
+        void onSuccess(T t);
+
+        void onFailed(int code, String errorMsg);
+    }
     //接口14
     public interface MakeorderHttpCallBack<T> {
         void onSuccess(T t);
@@ -153,7 +160,18 @@ public class RegistHttpClient {
         void onFailed(int code, String errorMsg);
     }
 
+    //接口15
+    public interface TarotCollectionListHttpCallBack<T> {
+        void onSuccess(T t);
 
+        void onFailed(int code, String errorMsg);
+    }
+    //接口16
+    public interface SetTarotCollectionHttpCallBack<T> {
+        void onSuccess(T t);
+
+        void onFailed(int code, String errorMsg);
+    }
 
     private static RegistHttpClient instance;
 
@@ -222,7 +240,7 @@ public class RegistHttpClient {
     // 接口2 登陆
     public void loginCode(String phone, String password, final LoginHttpCallback<LoginModel.DataBean> callback) {
         String url = DemoServers.apiServer() + "user/login";
-        password = MD5.getStringMD5(password);
+
 
         Map<String, String> headers = new HashMap<>(1);
 
@@ -314,14 +332,23 @@ public class RegistHttpClient {
     }
 
     //接口4
-    public void saveinfoCode(int uid, String ticket, String nickname, String photo, String photo_s, final SaveInfoHttpCallback<Void> callback) {
+    public void saveinfoCode(String uid, String ticket, String nickname, String photo, String photo_s, final SaveInfoHttpCallback<Void> callback) {
         String url = DemoServers.apiServer() + "user/saveinfo";
 
 
         Map<String, String> headers = new HashMap<>(1);
-
-
         StringBuilder body = new StringBuilder();
+//if(!TextUtils.isEmpty(nickname)){
+//    body.append("uid").append("=").append(uid).append("&")
+//            .append("ticket").append("=").append(ticket).append("&")
+//            .append("nickname").append("=").append(nickname);
+//}else{
+//    body.append("uid").append("=").append(uid).append("&")
+//            .append("ticket").append("=").append(ticket).append("&")
+//            .append("photo").append("=").append(photo).append("&")
+//            .append("photo_s").append("=").append(photo_s);
+//}
+
         body.append("uid").append("=").append(uid).append("&")
                 .append("ticket").append("=").append(ticket).append("&")
                 .append("nickname").append("=").append(nickname).append("&")
@@ -406,7 +433,7 @@ public class RegistHttpClient {
     }
 
     //接口6
-    public void upLoadCode(int uid, String ticket, String photo, final UpLoadHttpCallback<Void> callback) {
+    public void upLoadCode(String uid, String ticket, String photo,File file, final UpLoadHttpCallback<UpLoadModel.DataBean> callback) {
         String url = DemoServers.apiServer() + "user/upload";
 
 
@@ -415,12 +442,11 @@ public class RegistHttpClient {
 
         StringBuilder body = new StringBuilder();
         body.append("uid").append("=").append(uid).append("&")
-                .append("ticket").append("=").append(ticket).append("&")
-                .append("photo").append("=").append(photo);
+                .append("ticket").append("=").append(ticket);
 
         String bodyString = body.toString();
 
-        NimHttpClient.getInstance().execute(url, headers, bodyString, true, new NimHttpClient.NimHttpCallback() {
+        NimHttpClient.getInstance().execute(url, headers, bodyString, true,true,file, new NimHttpClient.NimHttpCallback() {
             @Override
             public void onResponse(String response, int code, String errorMsg) {
                 if (code != 0) {
@@ -435,7 +461,11 @@ public class RegistHttpClient {
                     JSONObject resObj = JSONObject.parseObject(response);
                     int resCode = resObj.getIntValue(RESULT_KEY_RES);
                     if (resCode == RESULT_CODE_SUCCESS) {
-                        callback.onSuccess(null);
+                        UpLoadModel model = new UpLoadModel();
+                        model.setData(resObj.getObject("data", UpLoadModel.DataBean.class));
+                        model.setMsg(resObj.getString("msg"));
+                        model.setCode(resCode);
+                        callback.onSuccess(model.getData());
                     } else {
                         String error = resObj.getString(RESULT_KEY_ERROR_MSG);
                         callback.onFailed(resCode, error);
@@ -448,7 +478,7 @@ public class RegistHttpClient {
     }
 
     //接口7
-    public void updateYXUerInfoCode(int uid, String ticket, final UpdateYXUerInfoHttpCallback<Void> callback) {
+    public void updateYXUerInfoCode(String uid, String ticket, final UpdateYXUerInfoHttpCallback<Void> callback) {
         String url = DemoServers.apiServer() + "user/updateYXUerInfo";
 
 
@@ -599,7 +629,7 @@ public class RegistHttpClient {
                 .append("star3").append("=").append(star3).append("&")
                 .append("star4").append("=").append(star4).append("&")
                 .append("want").append("=").append(want)
-                .append("haoping").append("=").append(haoping);
+                .append("cate").append("=").append(haoping);
 
         String bodyString = body.toString();
 
@@ -632,7 +662,7 @@ public class RegistHttpClient {
     }
 
     //接口11
-    public void deleteCode(int uid,String ticket,int cmt_id, final DeleteHttpCallBack<Void> callback) {
+    public void deleteCode(String uid,String ticket,String cmt_id, final DeleteHttpCallBack<Void> callback) {
         String url = DemoServers.apiServer() + "comment/delete";
 
 
@@ -691,7 +721,7 @@ public class RegistHttpClient {
                 .append("star3").append("=").append(star3).append("&")
                 .append("star4").append("=").append(star4).append("&")
                 .append("want").append("=").append(want)
-                .append("haoping").append("=").append(haoping);
+                .append("cate").append("=").append(haoping);
 
         String bodyString = body.toString();
 
@@ -724,7 +754,7 @@ public class RegistHttpClient {
 
 
     //接口13 get comment detail
-    public void detialCode(String uid,String ticket,int cmt_id, final DeleteHttpCallBack<CommentDetailModel.DataBean> callback) {
+    public void detialCode(String uid,String ticket,int cmt_id, final DetialHttpCallBack<CommentDetailModel.DataBean> callback) {
         String url = DemoServers.apiServer() + "comment/detial";
 
 
@@ -755,6 +785,53 @@ public class RegistHttpClient {
                     if (resCode == RESULT_CODE_SUCCESS) {
                         CommentDetailModel model = new CommentDetailModel();
                         model.setData(resObj.getObject("data", CommentDetailModel.DataBean.class));
+                        model.setMsg(resObj.getString("msg"));
+                        model.setCode(resCode);
+                        callback.onSuccess(model.getData());
+                    } else {
+                        String error = resObj.getString(RESULT_KEY_ERROR_MSG);
+                        callback.onFailed(resCode, error);
+                    }
+                } catch (JSONException e) {
+                    callback.onFailed(-1, e.getMessage());
+                }
+            }
+        });
+    }
+
+    //接口14 我的评价列表
+    public void myClist(String uid,String ticket,int page,int num, final MyClistHttpCallBack<CommentListModel.Data> callback) {
+        String url = DemoServers.apiServer() + "comment/myclist";
+
+
+        Map<String, String> headers = new HashMap<>(1);
+
+
+        StringBuilder body = new StringBuilder();
+        body.append("uid").append("=").append(uid).append("&")
+                .append("ticket").append("=").append(ticket).append("&")
+                .append("page").append("=").append(page).append("&")
+                .append("num").append("=").append(num);
+
+        String bodyString = body.toString();
+
+        NimHttpClient.getInstance().execute(url, headers, bodyString, false, new NimHttpClient.NimHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    LogUtil.e(TAG, "detial failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed(code, errorMsg);
+                    }
+                    return;
+                }
+
+                try {
+                    JSONObject resObj = JSONObject.parseObject(response);
+                    int resCode = resObj.getIntValue(RESULT_KEY_RES);
+                    if (resCode == RESULT_CODE_SUCCESS) {
+                        CommentListModel model = new CommentListModel();
+                        model.setData(resObj.getObject("data", CommentListModel.Data.class));
                         model.setMsg(resObj.getString("msg"));
                         model.setCode(resCode);
                         callback.onSuccess(model.getData());
@@ -812,6 +889,96 @@ public class RegistHttpClient {
             }
         });
     }
+
+    //接口15 获取列表
+    public void getCollectionList(String uid, String ticket, final TarotCollectionListHttpCallBack<TarotListModel.DataBean> callback) {
+        String url = DemoServers.apiServer() + "taluoshi/tlslist";
+
+
+        Map<String, String> headers = new HashMap<>(1);
+
+
+        StringBuilder body = new StringBuilder();
+        body.append("uid").append("=").append(uid).append("&")
+                .append("ticket").append("=").append(ticket);
+
+        String bodyString = body.toString();
+
+        NimHttpClient.getInstance().execute(url, headers, bodyString, false, new NimHttpClient.NimHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    LogUtil.e(TAG, "updateYXUserInfo failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed(code, errorMsg);
+                    }
+                    return;
+                }
+
+                try {
+                    JSONObject resObj = JSONObject.parseObject(response);
+                    int resCode = resObj.getIntValue(RESULT_KEY_RES);
+                    if (resCode == RESULT_CODE_SUCCESS) {
+                        TarotListModel model = new TarotListModel();
+                        model.setData(resObj.getObject("data", TarotListModel.DataBean.class));
+                        model.setMsg(resObj.getString("msg"));
+                        model.setCode(resCode);
+                        callback.onSuccess(model.getData());
+                    } else {
+                        String error = resObj.getString(RESULT_KEY_ERROR_MSG);
+                        callback.onFailed(resCode, error);
+                    }
+                } catch (JSONException e) {
+                    callback.onFailed(-1, e.getMessage());
+                }
+            }
+        });
+    }
+
+    //接口15 获取列表
+    public void setCollection(String uid, String ticket,String tId,String is_favor, final SetTarotCollectionHttpCallBack<Void> callback) {
+        String url = DemoServers.apiServer() + "taluoshi/tlslist";
+
+
+        Map<String, String> headers = new HashMap<>(1);
+
+
+        StringBuilder body = new StringBuilder();
+        body.append("uid").append("=").append(uid).append("&")
+                .append("ticket").append("=").append(ticket).append("&")
+                .append("tid").append("=").append(tId).append("&")
+                .append("is_favor").append("=").append(is_favor);
+
+        String bodyString = body.toString();
+
+        NimHttpClient.getInstance().execute(url, headers, bodyString, false, new NimHttpClient.NimHttpCallback() {
+            @Override
+            public void onResponse(String response, int code, String errorMsg) {
+                if (code != 0) {
+                    LogUtil.e(TAG, "updateYXUserInfo failed : code = " + code + ", errorMsg = " + errorMsg);
+                    if (callback != null) {
+                        callback.onFailed(code, errorMsg);
+                    }
+                    return;
+                }
+
+                try {
+                    JSONObject resObj = JSONObject.parseObject(response);
+                    int resCode = resObj.getIntValue(RESULT_KEY_RES);
+                    if (resCode == RESULT_CODE_SUCCESS) {
+
+                        callback.onSuccess(null);
+                    } else {
+                        String error = resObj.getString(RESULT_KEY_ERROR_MSG);
+                        callback.onFailed(resCode, error);
+                    }
+                } catch (JSONException e) {
+                    callback.onFailed(-1, e.getMessage());
+                }
+            }
+        });
+    }
+
 
 
     private String readAppKey() {

@@ -44,7 +44,7 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
      */
     @Override
     protected boolean canScroll() {
-        return false;
+        return true;
     }
 
     @Override

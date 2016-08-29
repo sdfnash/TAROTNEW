@@ -21,7 +21,7 @@
     android:layout_marginTop="10dp"
     android:paddingBottom="15dp"
     android:layout_height="wrap_content">
-    <com.netease.sdfnash.uikit.common.ui.imageview.CircleImageView
+    <com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:id="@+id/img_service_avatar"
@@ -53,16 +53,16 @@
         android:layout_below="@id/head"
         android:id="@+id/service_list"
         android:layout_height="wrap_content"></ListView>
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:background="@color/text_is_select"
-    android:text="立即咨询"
-    android:gravity="center"
-    android:paddingTop="15dp"
-    android:paddingBottom="15dp"
-    android:textColor="@color/white"
-    android:textSize="20sp"
-    />
+    <TextView
+        android:id="@+id/btn_insult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_is_select"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="立即咨询"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 </RelativeLayout>

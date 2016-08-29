@@ -21,6 +21,19 @@ public class CommentShowModel  implements Serializable{
     private String nickname;
     private String photo_s;
 
+    /**
+     * add_date : 1470929420
+     * modify_date : 1470929421
+     * cate : 1
+     * can_edit : 0
+     */
+
+    private String add_date;
+    private String modify_date;
+    private String cate;
+    private int can_edit;
+
+
     public String getId() {
         return id;
     }
@@ -59,5 +72,37 @@ public class CommentShowModel  implements Serializable{
 
     public void setPhoto_s(String photo_s) {
         this.photo_s = photo_s;
+    }
+
+    public String getAdd_date() {
+        return add_date;
+    }
+
+    public void setAdd_date(String add_date) {
+        this.add_date = add_date;
+    }
+
+    public String getModify_date() {
+        return modify_date;
+    }
+
+    public void setModify_date(String modify_date) {
+        this.modify_date = modify_date;
+    }
+
+    public String getCate() {
+        return cate;
+    }
+
+    public void setCate(String cate) {
+        this.cate = cate;
+    }
+
+    public int getCan_edit() {
+        return can_edit;
+    }
+
+    public void setCan_edit(int can_edit) {
+        this.can_edit = can_edit;
     }
 }

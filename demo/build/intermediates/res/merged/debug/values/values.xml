@@ -224,6 +224,7 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="fqlpay_wap_color">#FF50A4FE</color>
     <color name="g_child_page_bg_color">#FFFFFF</color>
     <color name="global_bg">#9000</color>
     <color name="gray7">#c5c4c4</color>
@@ -256,6 +257,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
+    <color name="mmdpay_wap_color">#FF10D4BC</color>
     <color name="press_mask">#33000000</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
@@ -265,6 +267,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="qgbc_wap_color">#FF4385f5</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -822,7 +825,9 @@
     <string name="multiport_manager">多端登录管理</string>
     <string name="mute_duration">禁言时间，单位s</string>
     <string name="mute_msg">设置禁言</string>
+    <string name="my_comment">我的评价</string>
     <string name="my_location">我的位置</string>
+    <string name="my_order">我的订单</string>
     <string name="my_team_card">我的群名片</string>
     <string name="net_broken">当前网络不可用</string>
     <string name="network_forbidden_login">你被服务器禁止登录，详询客服</string>
@@ -1109,6 +1114,13 @@
     <style name="Animation.Design.BottomSheetDialog" parent="Animation.AppCompat.Dialog">
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->

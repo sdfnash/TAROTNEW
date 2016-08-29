@@ -31,8 +31,7 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 群聊 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 群聊 -->
         <activity
             android:name="com.netease.sdfnash.uikit.team.activity.NormalTeamInfoActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -80,16 +79,14 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 联系人选择器 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 联系人选择器 -->
         <activity
             android:name="com.netease.sdfnash.uikit.contact_selector.activity.ContactSelectActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/contact_selector"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
- <!-- 照片选择 -->
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- 照片选择 -->
         <activity
             android:name="com.netease.sdfnash.uikit.common.media.picker.activity.PickImageActivity"
             android:screenOrientation="portrait"
@@ -118,8 +115,7 @@
             android:label="@string/input_panel_take"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden|adjustResize" />
- <!-- 视频 -->
+            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- 视频 -->
         <activity
             android:name="com.netease.sdfnash.uikit.session.activity.CaptureVideoActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -130,8 +126,7 @@
             android:name="com.netease.sdfnash.uikit.session.activity.WatchVideoActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/video_play"
-            android:theme="@style/DarkTheme" />
- <!-- 查看大图 -->
+            android:theme="@style/DarkTheme" /> <!-- 查看大图 -->
         <activity
             android:name="com.netease.sdfnash.uikit.session.activity.WatchMessagePictureActivity"
             android:configChanges="keyboardHidden"

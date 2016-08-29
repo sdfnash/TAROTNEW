@@ -2,6 +2,9 @@
 
 buildscript {
     apply from: 'script.gradle', to: buildscript
+    repositories {
+        jcenter()
+    }
 }
 
 allprojects {

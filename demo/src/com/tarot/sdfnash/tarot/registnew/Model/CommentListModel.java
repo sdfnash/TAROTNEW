@@ -124,7 +124,7 @@ public class CommentListModel implements Serializable{
         }
 
         public static class Info {
-            private int haoping_count;
+            private String haoping_count;
             private String zhongping_count;
             private String chaping_count;
             private String total_count;
@@ -139,11 +139,11 @@ public class CommentListModel implements Serializable{
             private String tls_accid;
             private String tls_photo;
 
-            public int getHaoping_count() {
+            public String getHaoping_count() {
                 return haoping_count;
             }
 
-            public void setHaoping_count(int haoping_count) {
+            public void setHaoping_count(String haoping_count) {
                 this.haoping_count = haoping_count;
             }
 

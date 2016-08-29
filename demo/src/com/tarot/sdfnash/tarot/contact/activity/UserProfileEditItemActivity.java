@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tarot.sdfnash.tarot.R;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.contact.constant.UserConstant;
 import com.tarot.sdfnash.tarot.contact.helper.UserUpdateHelper;
 import com.netease.sdfnash.uikit.cache.FriendDataCache;
@@ -33,6 +34,7 @@ import com.netease.nimlib.sdk.friend.constant.FriendFieldEnum;
 import com.netease.nimlib.sdk.friend.model.Friend;
 import com.netease.nimlib.sdk.uinfo.constant.GenderEnum;
 import com.netease.nimlib.sdk.uinfo.constant.UserInfoFieldEnum;
+import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -178,13 +180,14 @@ public class UserProfileEditItemActivity extends UI implements View.OnClickListe
                     Toast.makeText(UserProfileEditItemActivity.this, R.string.nickname_empty, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if (key == UserConstant.KEY_BIRTH) {
-                    update(birthText.getText().toString());
-                } else if (key == UserConstant.KEY_GENDER) {
-                    update(Integer.valueOf(gender));
-                } else {
-                    update(editText.getText().toString().trim());
-                }
+                updateNew(editText.getText().toString().trim());
+//                if (key == UserConstant.KEY_BIRTH) {
+//                    update(birthText.getText().toString());
+//                } else if (key == UserConstant.KEY_GENDER) {
+//                    update(Integer.valueOf(gender));
+//                } else {
+//                    update(editText.getText().toString().trim());
+//                }
             }
         });
     }
@@ -274,6 +277,31 @@ public class UserProfileEditItemActivity extends UI implements View.OnClickListe
         birthText.setText(TimeUtil.getFormatDatetime(birthYear, birthMonth, birthDay));
     }
 
+    //塔罗说用户数据更新
+    private void updateNew(String edit) {
+        RegistHttpClient.getInstance().saveinfoCode(Preferences.getUserId(), Preferences.getUserToken(), edit, null, null, new RegistHttpClient.SaveInfoHttpCallback<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                RegistHttpClient.getInstance().updateYXUerInfoCode(Preferences.getUserId(), Preferences.getUserToken(), new RegistHttpClient.UpdateYXUerInfoHttpCallback<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        onUpdateCompleted();
+                    }
+
+                    @Override
+                    public void onFailed(int code, String errorMsg) {
+                        Toast.makeText(UserProfileEditItemActivity.this, errorMsg, Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+
+            @Override
+            public void onFailed(int code, String errorMsg) {
+                Toast.makeText(UserProfileEditItemActivity.this, errorMsg, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
     private void update(Serializable content) {
         RequestCallbackWrapper callback = new RequestCallbackWrapper() {
             @Override
@@ -328,7 +356,7 @@ public class UserProfileEditItemActivity extends UI implements View.OnClickListe
 
         @Override
         public void onDateChanged(DatePicker view, int year, int month, int day) {
-            if(year >= minYear && year <= maxYear){
+            if (year >= minYear && year <= maxYear) {
                 currYear = year;
                 currMonthOfYear = month;
                 currDayOfMonth = day;
@@ -342,11 +370,11 @@ public class UserProfileEditItemActivity extends UI implements View.OnClickListe
             }
         }
 
-        public void setMaxYear(int year){
+        public void setMaxYear(int year) {
             maxYear = year;
         }
 
-        public void setMinYear(int year){
+        public void setMinYear(int year) {
             minYear = year;
         }
 

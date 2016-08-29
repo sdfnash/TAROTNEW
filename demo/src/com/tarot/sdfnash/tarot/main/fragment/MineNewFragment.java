@@ -1,10 +1,14 @@
 package com.tarot.sdfnash.tarot.main.fragment;
 
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView;
+import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.main.activity.MainActivity;
@@ -12,22 +16,29 @@ import com.tarot.sdfnash.tarot.main.activity.SettingsActivity;
 import com.tarot.sdfnash.tarot.registnew.activity.AboutActivity;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.auth.AuthService;
+import com.tarot.sdfnash.tarot.registnew.activity.MyCollectionActivity;
+import com.tarot.sdfnash.tarot.registnew.activity.MyCommentActivity;
+import com.tarot.sdfnash.tarot.registnew.activity.OrderActivity;
 
 public class MineNewFragment extends MainTabFragment implements View.OnClickListener {
     private RelativeLayout mLayoutJudge, mLayoutNotice, mLayoutOrder, mLayoutSetting, mLayoutAbout;
     private Button mBtnLogOut;
-
+    private HeadImageView mHeaderImage;
+    private TextView mTvName;
     @Override
     public void onClick(View v) {
         if (v.equals(mLayoutAbout)) {
             Intent i=new Intent(getActivity(), AboutActivity.class);
             startActivity(i);
         } else if (v.equals(mLayoutJudge)) {
-
+            Intent i=new Intent(getActivity(), MyCommentActivity.class);
+            startActivity(i);
         } else if (v.equals(mLayoutNotice)) {
-
+            Intent i=new Intent(getActivity(), MyCollectionActivity.class);
+            startActivity(i);
         } else if (v.equals(mLayoutOrder)) {
-
+            Intent i=new Intent(getActivity(), OrderActivity.class);
+            startActivity(i);
         } else if (v.equals(mLayoutSetting)) {
             Intent i = new Intent(getActivity(), SettingsActivity.class);
             startActivity(i);
@@ -37,8 +48,15 @@ public class MineNewFragment extends MainTabFragment implements View.OnClickList
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+    }
+
+    @Override
     protected void onInit() {
         init();
+        initUser();
     }
 
     public void init() {
@@ -56,6 +74,16 @@ public class MineNewFragment extends MainTabFragment implements View.OnClickList
         mBtnLogOut.setOnClickListener(this);
     }
 
+    public void initUser(){
+        mHeaderImage=(HeadImageView)getView().findViewById(R.id.setting_tarot_avatar);
+        mTvName=(TextView)getView().findViewById(R.id.setting_name);
+        if(!TextUtils.isEmpty(DemoCache.getAccount())){
+            mHeaderImage.loadBuddyAvatar(DemoCache.getAccount());
+        }else{
+            mHeaderImage.setImageResource(R.drawable.ic_logo);
+        }
+        mTvName.setText(Preferences.getKeyUserNickname()+"/"+Preferences.getUserAccount());
+    }
     private void logout() {
         removeLoginState();
         MainActivity.logout(getActivity(), false);

@@ -21,11 +21,19 @@
         android:layout_marginLeft="10dp"
         />
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_time"
+        android:text="11111"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_comment"
         android:padding="10dp"
-
         android:layout_below="@id/img_avatar"
         android:text="11111111111111111111"
         />
@@ -55,5 +63,10 @@
         android:text="删除评论"
         android:textColor="@drawable/selectable_text_color_white_blue"
         android:textSize="16dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_delete_comment"
+        ></View>
 </RelativeLayout>
 

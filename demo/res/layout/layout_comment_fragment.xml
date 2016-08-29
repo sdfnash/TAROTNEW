@@ -2,20 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/head"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@id/title"
-
-        android:paddingTop="15dp">
+        >
 
         <com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView
             android:id="@+id/img_comment_avatar"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:src="@drawable/head_icon_1" />
 
@@ -32,11 +34,13 @@
 
         <ImageView
             android:id="@+id/img_service_point"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:paddingRight="10dp"
-            android:src="@drawable/icon_rts_send" />
+            android:src="@drawable/ic_stat_01"
+            />
 
         <View
             android:layout_width="match_parent"
@@ -48,6 +52,7 @@
     <RelativeLayout
         android:id="@+id/point_layout"
         android:layout_width="match_parent"
+android:background="@color/white"
         android:layout_height="100dp"
         android:layout_below="@+id/head">
 
@@ -216,12 +221,130 @@
         android:text="立即咨询"
         android:textColor="@color/white"
         android:textSize="20sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:id="@+id/layout_percent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:weightSum="4"
+    android:layout_below="@+id/point_layout">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/color_red_ccfa3c55"
+            android:text="好评率"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_percent"
+            android:textColor="@color/color_red_ccfa3c55"
+            android:text="99.00%"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray7"
+            android:text="好评"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_good_comment"
+            android:textColor="@color/gray7"
+            android:text="99.00%"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray7"
+            android:text="中评"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_middle_comment"
+            android:textColor="@color/gray7"
+            android:text="99.00%"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/gray7"
+            android:text="差评"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_bad_comment"
+            android:textColor="@color/gray7"
+            android:text="99.00%"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>
     <com.tarot.sdfnash.tarot.registnew.View.PagingListView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/listView"
+        android:layout_below="@id/layout_percent"
         android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
         android:layout_height="match_parent"
         android:layout_above="@+id/btn_insult"
-        android:layout_below="@+id/point_layout"></com.tarot.sdfnash.tarot.registnew.View.PagingListView>
+        ></com.tarot.sdfnash.tarot.registnew.View.PagingListView>
 
 </RelativeLayout>

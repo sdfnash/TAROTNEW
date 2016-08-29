@@ -3,8 +3,13 @@ package com.tarot.sdfnash.tarot.common.http;
 import android.os.Handler;
 import android.util.Log;
 
-import com.tarot.sdfnash.tarot.DemoCache;
+import com.android.internal.http.multipart.FilePart;
+import com.android.internal.http.multipart.MultipartEntity;
+import com.android.internal.http.multipart.Part;
+import com.android.internal.http.multipart.StringPart;
 import com.netease.sdfnash.uikit.common.framework.NimTaskExecutor;
+import com.tarot.sdfnash.tarot.DemoCache;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -28,6 +33,7 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 
+import java.io.File;
 import java.net.UnknownHostException;
 import java.util.Map;
 
@@ -55,7 +61,10 @@ public class NimHttpClient {
         private String jsonBody;
         private NimHttpCallback callback;
         private boolean post;
+        private boolean upfile;
+        private File file;
 
+        //get
         public NimHttpTask(String url, Map<String, String> headers, String jsonBody, NimHttpCallback callback) {
             this(url, headers, jsonBody, callback, true);
         }
@@ -68,12 +77,23 @@ public class NimHttpClient {
             this.post = post;
         }
 
+        //file
+        public NimHttpTask(String url, Map<String, String> headers, String jsonBody, NimHttpCallback callback, boolean post, boolean upFile, File file) {
+            this.url = url;
+            this.headers = headers;
+            this.jsonBody = jsonBody;
+            this.callback = callback;
+            this.post = post;
+            this.upfile = upFile;
+            this.file = file;
+        }
+
         @Override
         public void run() {
             String response = null;
             int errorCode = 0;
             try {
-                response = post ? post(url, headers, jsonBody) : get(url, headers, jsonBody);
+                response = post ? post(url, headers, jsonBody, upfile, file) : get(url, headers, jsonBody);
             } catch (NimHttpException e) {
                 errorCode = e.getHttpCode();
             } finally {
@@ -197,11 +217,19 @@ public class NimHttpClient {
         executor.execute(new NimHttpTask(url, headers, body, callback, post));
     }
 
+    public void execute(String url, Map<String, String> headers, String body, boolean post, boolean upFile, File file, NimHttpCallback callback) {
+        if (!inited) {
+            return;
+        }
+
+        executor.execute(new NimHttpTask(url, headers, body, callback, post, upFile, file));
+    }
+
     /**
      * **************************** useful method ************************
      */
 
-    private String post(String url, Map<String, String> headers, String body) {
+    private String post(String url, Map<String, String> headers, String body, boolean upFile, File file) {
         HttpResponse response;
         HttpPost request;
         try {
@@ -214,16 +242,27 @@ public class NimHttpClient {
                     request.addHeader(header.getKey(), header.getValue());
                 }
             }
-
-            // add body
-            HttpEntity entity = null;
-            if (body != null) {
-                entity = new StringEntity(body);
+            if (!upFile) {
+                // add body
+                HttpEntity entity = null;
+                if (body != null) {
+                    entity = new StringEntity(body);
+                }
+                if (entity != null) {
+                    request.setEntity(entity);
+                }
+            } else {
+                // add body
+                Part[] part = new Part[3];
+                part[0] = new FilePart("photo", file);
+                part[1] = new StringPart("uid", Preferences.getUserId());
+                part[2] = new StringPart("ticket", Preferences.getUserToken());
+                MultipartEntity entity = new MultipartEntity(part);
+                if (entity != null) {
+                    request.setEntity(entity);
+                }
             }
 
-            if (entity != null) {
-                request.setEntity(entity);
-            }
 
             // execute
             response = client.execute(request);
@@ -288,10 +327,68 @@ public class NimHttpClient {
             Log.e(TAG, "Get data error", e);
             if (e instanceof UnknownHostException) {
                 throw new NimHttpException(408);
-            } else if(e instanceof SSLPeerUnverifiedException) {
+            } else if (e instanceof SSLPeerUnverifiedException) {
                 throw new NimHttpException(408);
             }
             throw new NimHttpException(e);
         }
     }
+
+    private String postImg(String url, Map<String, String> headers, String body, File file) {
+        HttpResponse response;
+        HttpPost request;
+        try {
+            request = new HttpPost(url);
+
+            // add request headers
+            request.addHeader("charset", "utf-8");
+            if (headers != null) {
+                for (Map.Entry<String, String> header : headers.entrySet()) {
+                    request.addHeader(header.getKey(), header.getValue());
+                }
+            }
+
+            // add body
+//            HttpEntity entity = null;
+//            if (body != null) {
+//                entity = new StringEntity(body);
+//            }
+
+            Part[] part = new Part[3];
+            part[0] = new FilePart("file", file);
+            part[1] = new StringPart("uid", Preferences.getUserAccount());
+            part[2] = new StringPart("ticket", Preferences.getUserToken());
+            MultipartEntity multipartEntity = new MultipartEntity(part);
+
+
+            if (multipartEntity != null) {
+                request.setEntity(multipartEntity);
+            }
+
+            // execute
+            response = client.execute(request);
+
+            // response
+            StatusLine statusLine = response.getStatusLine();
+            if (statusLine == null) {
+                Log.e(TAG, "StatusLine is null");
+                throw new NimHttpException();
+            }
+            int statusCode = statusLine.getStatusCode();
+            if (statusCode < 200 || statusCode > 299) {
+                throw new NimHttpException(statusCode);
+            }
+            return EntityUtils.toString(response.getEntity(), "utf-8");
+        } catch (Exception e) {
+            if (e instanceof NimHttpException) {
+                throw (NimHttpException) e;
+            }
+            Log.e(TAG, "Post data error", e);
+            if (e instanceof UnknownHostException) {
+                throw new NimHttpException(408);
+            }
+            throw new NimHttpException(e);
+        }
+    }
+
 }

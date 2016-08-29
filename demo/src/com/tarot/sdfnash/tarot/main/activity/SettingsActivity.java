@@ -11,22 +11,21 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.tarot.sdfnash.tarot.DemoCache;
-import com.tarot.sdfnash.tarot.R;
-import com.tarot.sdfnash.tarot.avchat.activity.AVChatSettingsActivity;
-import com.tarot.sdfnash.tarot.config.preference.Preferences;
-import com.tarot.sdfnash.tarot.config.preference.UserPreferences;
-import com.tarot.sdfnash.tarot.contact.activity.UserProfileSettingActivity;
-import com.tarot.sdfnash.tarot.main.adapter.SettingsAdapter;
-import com.tarot.sdfnash.tarot.main.model.SettingTemplate;
-import com.tarot.sdfnash.tarot.main.model.SettingType;
-import com.netease.sdfnash.uikit.common.activity.UI;
-import com.netease.sdfnash.uikit.model.ToolBarOptions;
-import com.netease.sdfnash.uikit.session.audio.MessageAudioControl;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.StatusBarNotificationConfig;
 import com.netease.nimlib.sdk.auth.AuthService;
 import com.netease.nimlib.sdk.msg.MsgService;
+import com.netease.sdfnash.uikit.common.activity.UI;
+import com.netease.sdfnash.uikit.model.ToolBarOptions;
+import com.netease.sdfnash.uikit.session.audio.MessageAudioControl;
+import com.tarot.sdfnash.tarot.R;
+import com.tarot.sdfnash.tarot.avchat.activity.AVChatSettingsActivity;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
+import com.tarot.sdfnash.tarot.config.preference.UserPreferences;
+import com.tarot.sdfnash.tarot.main.adapter.SettingsAdapter;
+import com.tarot.sdfnash.tarot.main.model.SettingTemplate;
+import com.tarot.sdfnash.tarot.main.model.SettingType;
+import com.tarot.sdfnash.tarot.registnew.activity.UserInfoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -163,7 +162,10 @@ public class SettingsActivity extends UI implements SettingsAdapter.SwitchChange
 
         switch (item.getId()) {
             case TAG_HEAD:
-                UserProfileSettingActivity.start(this, DemoCache.getAccount());
+               // UserProfileSettingActivity.start(this, DemoCache.getAccount());
+
+                Intent i=new Intent(SettingsActivity.this,UserInfoActivity.class);
+                startActivity(i);
                 break;
             case TAG_NO_DISTURBE:
                 startNoDisturb();
@@ -273,6 +275,9 @@ public class SettingsActivity extends UI implements SettingsAdapter.SwitchChange
                 case NoDisturbActivity.NO_DISTURB_REQ:
                     setNoDisturbTime(data);
                     break;
+                case UserInfoActivity.USER_INFO:{
+
+                }
                 default:
                     break;
             }

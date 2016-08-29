@@ -40,7 +40,7 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
         ToolBarOptions options = new ToolBarOptions();
         setToolBar(R.id.toolbar, options);
         cmtId = getIntent().getStringExtra("cmtId");
-        mGroupComment = findView(R.id.radio_comment_good);
+        mGroupComment = findView(R.id.radio_group_comment);
         mGroupWill = findView(R.id.radio_group_will);
         mBtnGood = findView(R.id.radio_comment_good);
         mBtnMiddle = findView(R.id.radio_comment_middle);
@@ -57,10 +57,10 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
         mBarRight.setStepSize(1);
         mBarSpeed.setStepSize(1);
         mBarService.setStepSize(1);
-        mBarHelp.setIsIndicator(true);
-        mBarSpeed.setIsIndicator(true);
-        mBarRight.setIsIndicator(true);
-        mBarService.setIsIndicator(true);
+        mBarHelp.setIsIndicator(false);
+        mBarSpeed.setIsIndicator(false);
+        mBarRight.setIsIndicator(false);
+        mBarService.setIsIndicator(false);
         mBarRight.setOnRatingBarChangeListener(this);
         mBarSpeed.setOnRatingBarChangeListener(this);
         mBarService.setOnRatingBarChangeListener(this);
@@ -68,7 +68,7 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
         mBtnCommit.setOnClickListener(this);
         if (CHANGE_COMMENT.equals(getIntent().getStringExtra("type"))) {
             isChange = true;
-            RegistHttpClient.getInstance().detialCode(Preferences.getUserAccount(), Preferences.getUserToken(), Integer.parseInt(cmtId), new RegistHttpClient.DeleteHttpCallBack<CommentDetailModel.DataBean>() {
+            RegistHttpClient.getInstance().detialCode(Preferences.getUserId(), Preferences.getUserToken(), Integer.parseInt(cmtId), new RegistHttpClient.DetialHttpCallBack<CommentDetailModel.DataBean>() {
                 @Override
                 public void onSuccess(CommentDetailModel.DataBean model) {
                     if (want == 0) {
@@ -140,7 +140,7 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
             }
 
             if (isChange) {//修改
-                RegistHttpClient.getInstance().editCode(Preferences.getUserAccount(), Preferences.getUserToken()
+                RegistHttpClient.getInstance().editCode(Preferences.getUserId(), Preferences.getUserToken()
                         , o_id, comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.EditHttpCallBack<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
@@ -154,7 +154,7 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
                             }
                         });
             } else {//新增
-                RegistHttpClient.getInstance().addCode(Preferences.getUserAccount(), Preferences.getUserToken()
+                RegistHttpClient.getInstance().addCode(Preferences.getUserId(), Preferences.getUserToken()
                         , o_id, comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.AddHttpCallBack<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

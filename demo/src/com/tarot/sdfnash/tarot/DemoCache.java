@@ -12,7 +12,9 @@ public class DemoCache {
 
     private static Context context;
 
-    private static String account;
+    private static String account;// 云信accid
+
+    private static String tarlotAccount;
 
     private static StatusBarNotificationConfig notificationConfig;
 
@@ -23,9 +25,13 @@ public class DemoCache {
     public static String getAccount() {
         return account;
     }
+    public static String getTarlotAccount() {
+        return tarlotAccount;
+    }
 
     public static void setAccount(String account_tarot, String account_yunxin) {
-        DemoCache.account = account_tarot;
+        DemoCache.account = account_yunxin;
+        DemoCache.tarlotAccount=account_tarot;
         NimUIKit.setAccount(account_yunxin);
     }
 

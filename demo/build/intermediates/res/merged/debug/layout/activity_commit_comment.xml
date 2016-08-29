@@ -259,6 +259,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:id="@+id/comment_edit"
+        android:background="@drawable/shape_grey_stroke"
         android:hint="期待亲提供公正，客观的评论，以便我们给予亲更好的服务。"
         />
     <Button
