@@ -1,135 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_head_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
 
-        <View
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"></View>
+
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <!--<com.bjhl.social.ui.viewsupport.ResourceImageView-->
+        <!--android:id="@+id/dialog_avatar"-->
+
+        <!--android:layout_width="75dp"-->
+        <!--android:layout_height="75dp"-->
+
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--fresco:placeholderImage="@drawable/icon_head_default"-->
+        <!--fresco:placeholderImageScaleType="centerInside"-->
+        <!--fresco:shape="circle"-->
+        <!--fresco:thumb_height="75dp"-->
+        <!--fresco:thumb_width="75dp" />-->
+
+        <com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/dialog_avatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_default"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/dialog_camera"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"></View>
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignBottom="@id/dialog_avatar"
+            android:layout_alignRight="@id/dialog_avatar"
+            android:background="@drawable/ic_bbs_xuanqutouxiang_n" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></View>
+    <com.netease.sdfnash.uikit.common.ui.widget.ClearableEditTextWithIcon
+        android:id="@+id/dialog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_white_normal"
+        android:drawablePadding="15dp"
+        android:hint="请输入您的昵称"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/color_white_66ffffff"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp" />
+    <!--<LinearLayout-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:background="@drawable/ic_bbs_import_n">-->
+
+    <!--<View-->
+    <!--android:layout_width="14dp"-->
+    <!--android:layout_height="match_parent"></View>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:text="昵称"-->
+    <!--/>-->
+
+    <!--<View-->
+    <!--android:layout_width="14dp"-->
+    <!--android:layout_height="match_parent"></View>-->
+    <!---->
+    <!---->
+
+    <!--<EditText-->
+
+    <!--android:id="@+id/dialog_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@null"-->
+    <!--android:cursorVisible="true"-->
+    <!--android:gravity="center"-->
+    <!--android:hint="请输入昵称"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColorHint="@color/grey_1" />-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></View>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/grey_1"></View>-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dialog_commit"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:background="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="完善下面的资料，才能进行操作呦！"
-             />
+            android:layout_centerInParent="true"
+            android:text="开启塔罗之旅"
+            android:textColor="@color/taLuoTheme" />
+    </RelativeLayout>
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="15dp"></View>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal">
-
-            <!--<com.bjhl.social.ui.viewsupport.ResourceImageView-->
-            <!--android:id="@+id/dialog_avatar"-->
-
-            <!--android:layout_width="75dp"-->
-            <!--android:layout_height="75dp"-->
-
-            <!--android:layout_gravity="center_horizontal"-->
-            <!--fresco:placeholderImage="@drawable/icon_head_default"-->
-            <!--fresco:placeholderImageScaleType="centerInside"-->
-            <!--fresco:shape="circle"-->
-            <!--fresco:thumb_height="75dp"-->
-            <!--fresco:thumb_width="75dp" />-->
-
-            <com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView
-                android:id="@+id/dialog_avatar"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_centerHorizontal="true"
-                 />
-
-            <ImageView
-                android:id="@+id/dialog_camera"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/dialog_avatar"
-                android:layout_alignRight="@id/dialog_avatar"
-                android:background="@drawable/ic_bbs_xuanqutouxiang_n" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"></View>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="44dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/ic_bbs_import_n">
-
-            <View
-                android:layout_width="14dp"
-                android:layout_height="match_parent"></View>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="昵称"
-                 />
-
-            <View
-                android:layout_width="14dp"
-                android:layout_height="match_parent"></View>
-
-            <EditText
-
-                android:id="@+id/dialog_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@null"
-                android:cursorVisible="true"
-                android:gravity="center"
-                android:hint="请输入昵称"
-                android:singleLine="true"
-
-                android:textColorHint="@color/grey_1" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"></View>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:background="@color/grey_1"></View>
-
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"></View>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/dialog_commit"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_bbs_button_d" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="提交"
-                android:textColor="@color/white" />
-        </RelativeLayout>
-
-    </LinearLayout>
+</LinearLayout>
 
 
 

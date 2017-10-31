@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.netease.sdfnash.uikit.common.fragment.TFragment;
 import com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView;
@@ -25,7 +24,6 @@ import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
 import com.tarot.sdfnash.tarot.registnew.View.DipPixUtil;
 import com.tarot.sdfnash.tarot.registnew.View.EmptyLayout;
 import com.tarot.sdfnash.tarot.registnew.View.PagingListView;
-import com.tarot.sdfnash.tarot.registnew.activity.CommitCommentActivity;
 import com.tarot.sdfnash.tarot.registnew.adapter.AbstractAdapter;
 import com.tarot.sdfnash.tarot.session.SessionHelper;
 
@@ -80,6 +78,7 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
         mTvHelp = findView(R.id.tv_point_help);
         mTvRight = findView(R.id.tv_point_right);
         mTvInsult = findView(R.id.btn_insult);
+        mTvInsult.setVisibility(View.GONE);
         mTvInsult.setOnClickListener(this);
         mPagingListView = findView(R.id.listView);
         mListView = mPagingListView.getListView();
@@ -87,10 +86,11 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
         mRateAttitude = findView(R.id.attitude_bar);
         mRateHelp = findView(R.id.help_bar);
         mRateRight = findView(R.id.right_bar);
-        mRateRight.setIsIndicator(false);
-        mRateHelp.setIsIndicator(false);
-        mRateAttitude.setIsIndicator(false);
-        mRateSpeed.setIsIndicator(false);
+        mRateRight.setIsIndicator(true);
+        mRateHelp.setIsIndicator(true);
+        mRateAttitude.setIsIndicator(true);
+        mRateSpeed.setIsIndicator(true);
+       tID=Integer.parseInt(Preferences.getUserId());
         init(savedInstanceState);
     }
 
@@ -214,8 +214,8 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
     }
 
     public String timeTrans(long time){
-        SimpleDateFormat sdf = new SimpleDateFormat("MM-dd HH:mm");
-        String date = sdf.format(new Date(time));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        String date = sdf.format(new Date(time*1000));
         return date;
     }
 
@@ -225,21 +225,21 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
         NumberFormat nt = NumberFormat.getPercentInstance();
         //设置百分数精确度2即保留两位小数
         nt.setMinimumFractionDigits(2);
-        mTvPercent.setText(nt.format(model.getInfo().getHaopinglv()));
+        mTvPercent.setText(model.getInfo().getHaopinglv()+"%");
         mTvGood.setText(model.getInfo().getHaoping_count());
         mTvMiddle.setText(model.getInfo().getZhongping_count());
         mTvBad.setText(model.getInfo().getChaping_count());
-        mImgAvatar.loadBuddyAvatar(model.getInfo().getTls_photo());
+        mImgAvatar.doLoadImage(true,"commentHeader",model.getInfo().getTls_photo(),HeadImageView.DEFAULT_AVATAR_THUMB_SIZE);
         mTvName.setText(model.getInfo().getTls_nickname());
-        if (model.getInfo().getAvg_star() >= 1 && model.getInfo().getAvg_star() < 2) {
+        if (Float.parseFloat(model.getInfo().getAvg_star()) >= 1 && Float.parseFloat(model.getInfo().getAvg_star()) < 2) {
             mImgPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_01));
-        } else if (model.getInfo().getAvg_star() >= 2 && model.getInfo().getAvg_star() < 3) {
+        } else if (Float.parseFloat(model.getInfo().getAvg_star()) >= 2 && Float.parseFloat(model.getInfo().getAvg_star()) < 3) {
             mImgPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_02));
-        } else if (model.getInfo().getAvg_star() >= 3 && model.getInfo().getAvg_star() < 4) {
+        } else if (Float.parseFloat(model.getInfo().getAvg_star()) >= 3 && Float.parseFloat(model.getInfo().getAvg_star()) < 4) {
             mImgPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_03));
-        } else if (model.getInfo().getAvg_star() >= 4 && model.getInfo().getAvg_star() < 5) {
+        } else if (Float.parseFloat(model.getInfo().getAvg_star()) >= 4 && Float.parseFloat(model.getInfo().getAvg_star()) < 5) {
             mImgPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_04));
-        } else if (model.getInfo().getAvg_star() >= 5) {
+        } else if (Float.parseFloat(model.getInfo().getAvg_star()) >= 5) {
             mImgPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_05));
         }
         mTvPoint.setText(String.valueOf(model.getInfo().getAvg_star()));
@@ -248,10 +248,10 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
         mTvRight.setText(String.valueOf(model.getInfo().getAvg_star3()));
         mTvHelp.setText(String.valueOf(model.getInfo().getAvg_star4()));
         tls_accid = model.getInfo().getTls_accid();
-        mRateSpeed.setRating((float) model.getInfo().getAvg_star1());
-        mRateAttitude.setRating((float) model.getInfo().getAvg_star2());
-        mRateRight.setRating((float) model.getInfo().getAvg_star3());
-        mRateHelp.setRating((float) model.getInfo().getAvg_star4());
+        mRateSpeed.setRating(Float.parseFloat( model.getInfo().getAvg_star1()));
+        mRateAttitude.setRating(Float.parseFloat( model.getInfo().getAvg_star2()));
+        mRateRight.setRating(Float.parseFloat( model.getInfo().getAvg_star3()));
+        mRateHelp.setRating(Float.parseFloat( model.getInfo().getAvg_star4()));
 
     }
 
@@ -284,49 +284,51 @@ public class MainCommentFragment extends TFragment implements View.OnClickListen
             Button mBtnChange = (Button) convertView.findViewById(R.id.btn_good_comment);
             Button mBtnDelete = (Button) convertView.findViewById(R.id.btn_delete_comment);
             TextView mTvTime=(TextView)convertView.findViewById(R.id.tv_time);
-            mBtnChange.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent i = new Intent(getActivity(), CommitCommentActivity.class);
-                    i.putExtra("tId", tID);
-                    i.putExtra("cmtId", item.getId());
-                    startActivityForResult(i, 0x01);
-                }
-            });
-            mBtnDelete.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //// TODO: 16/8/20
-                    RegistHttpClient.getInstance().deleteCode(Preferences.getUserId(), Preferences.getUserToken(), item.getId(), new RegistHttpClient.DeleteHttpCallBack<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            refreshData();
-                        }
-
-                        @Override
-                        public void onFailed(int code, String errorMsg) {
-                            Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
-
-                }
-            });
+//            mBtnChange.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent i = new Intent(getActivity(), CommitCommentActivity.class);
+//                    i.putExtra("tId", tID);
+//                    i.putExtra("cmtId", item.getId());
+//                    i.putExtra("type",CommitCommentActivity.CHANGE_COMMENT);
+//                    startActivityForResult(i, 0x01);
+//                }
+//            });
+//            mBtnDelete.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    //// TODO: 16/8/20
+//                    RegistHttpClient.getInstance().deleteCode(Preferences.getUserId(), Preferences.getUserToken(), item.getId(), new RegistHttpClient.DeleteHttpCallBack<Void>() {
+//                        @Override
+//                        public void onSuccess(Void aVoid) {
+//                            refreshData();
+//                        }
+//
+//                        @Override
+//                        public void onFailed(int code, String errorMsg) {
+//                            Toast.makeText(getActivity(), errorMsg, Toast.LENGTH_SHORT).show();
+//                        }
+//                    });
+//
+//
+//                }
+//            });
             mTvTime.setText(timeTrans(Long.parseLong(item.getAdd_date())));
-            headImageView.loadBuddyAvatar(item.getPhoto_s());
+          //  headImageView.loadBuddyAvatar(item.getPhoto_s());
+            headImageView.doLoadImage(true,item.getId(),item.getPhoto_s(),HeadImageView.DEFAULT_AVATAR_THUMB_SIZE);
             mTvName.setText(item.getNickname());
             mTvComment.setText(item.getComment());
-            if (!item.getU_id().equals(Preferences.getUserId())) {
-                mBtnChange.setVisibility(View.GONE);
-                mBtnDelete.setVisibility(View.GONE);
-            } else {
-                if (item.getCan_edit() == 0) {
-                    mBtnChange.setVisibility(View.GONE);
-                } else if (item.getCan_edit() == 1) {
-                    mBtnChange.setVisibility(View.VISIBLE);
-                }
-                mBtnDelete.setVisibility(View.VISIBLE);
-            }
+//            if (!item.getU_id().equals(Preferences.getUserId())) {
+//                mBtnChange.setVisibility(View.GONE);
+//                mBtnDelete.setVisibility(View.GONE);
+//            } else {
+//                if (item.getCan_edit() == 0) {
+//                    mBtnChange.setVisibility(View.GONE);
+//                } else if (item.getCan_edit() == 1) {
+//                    mBtnChange.setVisibility(View.VISIBLE);
+//                }
+//                mBtnDelete.setVisibility(View.VISIBLE);
+//            }
 
 
         }

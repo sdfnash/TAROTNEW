@@ -80,9 +80,9 @@ public class MainActivity extends UI {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tab);
 
-        setToolBar(R.id.toolbar, R.string.app_name, R.drawable.actionbar_dark_logo);
-
-        setTitle(R.string.app_name);
+//        setToolBar(R.id.toolbar, R.string.app_name, R.drawable.actionbar_dark_logo);
+//
+//        setTitle(R.string.app_name);
 
         requestBasicPermission();
 
@@ -129,7 +129,7 @@ public class MainActivity extends UI {
 
     @OnMPermissionGranted(BASIC_PERMISSION_REQUEST_CODE)
     public void onBasicPermissionSuccess(){
-        Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
     }
 
     @OnMPermissionDenied(BASIC_PERMISSION_REQUEST_CODE)

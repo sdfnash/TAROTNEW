@@ -9,13 +9,13 @@ import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.netease.sdfnash.uikit.common.activity.UI;
 import com.netease.sdfnash.uikit.common.media.picker.PickImageHelper;
 import com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView;
+import com.netease.sdfnash.uikit.common.ui.widget.ClearableEditTextWithIcon;
 import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.main.activity.MainActivity;
@@ -26,7 +26,7 @@ import java.io.File;
 
 public class UserInfoActivity extends UI implements View.OnClickListener {
 
-    private EditText mNameEdit;
+    private ClearableEditTextWithIcon mNameEdit;
     private ImageView mComplete, mPhotoCamera;
     private HeadImageView mImgAvatar;
     private static final int PICK_AVATAR_REQUEST = 0x0E;
@@ -50,13 +50,14 @@ public class UserInfoActivity extends UI implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info);
-        mNameEdit = (EditText) findViewById(R.id.dialog_name);
+        mNameEdit = (ClearableEditTextWithIcon) findViewById(R.id.dialog_name);
+        mNameEdit.setIconResource(R.drawable.user_account_icon);
         mImgAvatar = (HeadImageView) findViewById(R.id.dialog_avatar);
         mComplete = (ImageView) findViewById(R.id.dialog_commit);
         mPhotoCamera = (ImageView) findViewById(R.id.dialog_camera);
         mComplete.setOnClickListener(this);
         mImgAvatar.setOnClickListener(this);
-        mPhotoCamera.setOnClickListener(this);
+        //  mPhotoCamera.setOnClickListener(this);
         mComplete.setClickable(false);
 
         mNameEdit.addTextChangedListener(new TextWatcher() {
@@ -72,23 +73,23 @@ public class UserInfoActivity extends UI implements View.OnClickListener {
                 temp = s;
                 if (TextUtils.isEmpty(mNameEdit.getText()) || TextUtils.isEmpty(String.valueOf(mSelectedImageUrl))) {
                     mComplete.setClickable(false);
-                    mComplete.setImageDrawable(getResources().getDrawable(R.drawable.ic_bbs_button_d));
+                    //   mComplete.setImageDrawable(getResources().getDrawable(R.drawable.shape_white_trans_radius));
                 } else {
                     mComplete.setClickable(true);
-                    mComplete.setImageDrawable(getResources().getDrawable(R.drawable.selectable_complete));
+                    //  mComplete.setImageDrawable(getResources().getDrawable(R.drawable.shape_white_trans_radius));
                 }
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (temp.length() > 7) {
-                    int selectionStart = mNameEdit.getSelectionStart();
-                    int selectionEnd = mNameEdit.getSelectionEnd();
-                    s.delete(selectionStart - 1, selectionEnd);
-                    int tempSelection = mNameEdit.getSelectionEnd();
-                    mNameEdit.setText(s);
-                    mNameEdit.setSelection(tempSelection);
-                }
+//                if (temp.length() > 7) {
+//                    int selectionStart = mNameEdit.getSelectionStart();
+//                    int selectionEnd = mNameEdit.getSelectionEnd();
+//                    s.delete(selectionStart - 1, selectionEnd);
+//                    int tempSelection = mNameEdit.getSelectionEnd();
+//                    mNameEdit.setText(s);
+//                    mNameEdit.setSelection(tempSelection);
+//                }
             }
         });
     }
@@ -103,31 +104,35 @@ public class UserInfoActivity extends UI implements View.OnClickListener {
                         public void onSuccess(Void aVoid) {
                             Preferences.saveUserNickName(mNameEdit.getText().toString().trim());
                             Preferences.saveUserPhoto(photo);
-                           RegistHttpClient.getInstance().updateYXUerInfoCode(Preferences.getUserId(), Preferences.getUserToken(), new RegistHttpClient.UpdateYXUerInfoHttpCallback<Void>() {
-                               @Override
-                               public void onSuccess(Void aVoid) {
-                                   Toast.makeText(UserInfoActivity.this,"云信数据更新成功",Toast.LENGTH_SHORT).show();
-                                   if(isFromLogin){
-                                       MainActivity.start(UserInfoActivity.this);
-                                       finish();
-                                   }else{
-                                       finish();
-                                   }
-                               }
+                            RegistHttpClient.getInstance().updateYXUerInfoCode(Preferences.getUserId(), Preferences.getUserToken(), new RegistHttpClient.UpdateYXUerInfoHttpCallback<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Toast.makeText(UserInfoActivity.this,"数据修改成功",Toast.LENGTH_SHORT).show();
+                                    if(isFromLogin){
+                                        MainActivity.start(UserInfoActivity.this);
+                                        finish();
+                                    }else{
+                                        finish();
+                                    }
+                                }
 
-                               @Override
-                               public void onFailed(int code, String errorMsg) {
+                                @Override
+                                public void onFailed(int code, String errorMsg) {
 
-                               }
-                           });
+                                }
+                            });
                         }
 
                         @Override
                         public void onFailed(int code, String errorMsg) {
-
+                            Toast.makeText(UserInfoActivity.this, errorMsg, Toast.LENGTH_SHORT).show();
                         }
                     });
+                }else {
+                    Toast.makeText(UserInfoActivity.this, "请输入昵称", Toast.LENGTH_SHORT).show();
                 }
+            }else {
+                Toast.makeText(UserInfoActivity.this, "请上传头像", Toast.LENGTH_SHORT).show();
             }
         } else if (v.equals(mImgAvatar) || v.equals(mPhotoCamera)) {
             choosePic();
@@ -175,7 +180,7 @@ public class UserInfoActivity extends UI implements View.OnClickListener {
 
             @Override
             public void onSuccess(UpLoadModel.DataBean model) {
-                Toast.makeText(UserInfoActivity.this, "OK", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserInfoActivity.this, "头像上传成功", Toast.LENGTH_SHORT).show();
                 photo = model.getPhoto_url();
                 photo_s=model.getThumb_photo_url();
                 mImgAvatar.setImageURI(Uri.parse(path));

@@ -123,7 +123,8 @@ public class NimApplication extends Application {
         config.notificationSmallIconId = R.drawable.ic_stat_notify_msg;
 
         // 通知铃声的uri字符串
-        config.notificationSound = "android.resource://com.netease.nim.demo/raw/msg";
+        //config.notificationSound = "android.resource://com.netease.nim.demo/raw/msg";
+        config.notificationSound = "android.resource://com.tarot.sdfnash.tarot/raw/msg";
 
         // 呼吸灯配置
         config.ledARGB = Color.GREEN;

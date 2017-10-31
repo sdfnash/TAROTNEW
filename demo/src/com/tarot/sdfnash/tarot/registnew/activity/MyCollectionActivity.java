@@ -1,5 +1,7 @@
 package com.tarot.sdfnash.tarot.registnew.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,16 +10,20 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.netease.sdfnash.uikit.common.activity.UI;
 import com.netease.sdfnash.uikit.common.ui.imageview.ImageViewEx;
+import com.netease.sdfnash.uikit.model.ToolBarOptions;
 import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.registnew.Model.TarotListModel;
+import com.tarot.sdfnash.tarot.registnew.Model.TarotModel;
 import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
 import com.tarot.sdfnash.tarot.session.SessionHelper;
 
@@ -31,11 +37,14 @@ public class MyCollectionActivity extends UI {
     public Handler mHandler;
 
     private GridView find_grid;
-    private List<TarotListModel.DataBean.Tarot> tarotList;//存储从服务器端传过来的塔罗师信息列
+    private List<TarotModel> tarotList;//存储从服务器端传过来的塔罗师信息列
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_collection);
+        ToolBarOptions options = new ToolBarOptions();
+        options.titleId = R.string.my_collection;
+        setToolBar(R.id.toolbar, options);
         findViews();
         setTaLuoShiFounds();
         setFind_grid();
@@ -49,6 +58,42 @@ public class MyCollectionActivity extends UI {
         find_grid = (GridView) findViewById(R.id.find_grid);
         mAdapter = new TarotListAdapter();
         find_grid.setAdapter(mAdapter);
+        find_grid.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                final int position1=position;
+                AlertDialog.Builder builder = new AlertDialog.Builder(MyCollectionActivity.this);
+                builder.setMessage("取消关注");
+                builder.setTitle("提示");
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        RegistHttpClient.getInstance().setCollection(Preferences.getUserId(), Preferences.getUserToken(), tarotList.get(position1).getId(), "0", new RegistHttpClient.SetTarotCollectionHttpCallBack<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(MyCollectionActivity.this,"取消关注成功",Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onFailed(int code, String errorMsg) {
+
+                            }
+                        });
+                    }
+                });
+                builder.setCancelable(true);
+                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                builder.create().show();
+
+                return false;
+            }
+        });
     }
 
     private void setTaLuoShiFounds() {
@@ -130,6 +175,15 @@ public class MyCollectionActivity extends UI {
             }else if("5.0".equals(tarotList.get(position).getStar())){
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_05));
             }
+            vh.mImgAvatar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i=new Intent(MyCollectionActivity.this, TarotActivity.class);
+                    i.putExtra("tls_accid",tarotList.get(position).getYx_accid());
+                    i.putExtra("t_id",tarotList.get(position).getId());
+                    startActivity(i);
+                }
+            });
             /**
              * id : 3
              * nickname : aaa23

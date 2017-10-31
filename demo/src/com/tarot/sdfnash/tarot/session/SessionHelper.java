@@ -3,19 +3,38 @@ package com.tarot.sdfnash.tarot.session;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
+import com.netease.nimlib.sdk.NIMClient;
+import com.netease.nimlib.sdk.avchat.model.AVChatAttachment;
+import com.netease.nimlib.sdk.msg.MsgService;
+import com.netease.nimlib.sdk.msg.attachment.FileAttachment;
+import com.netease.nimlib.sdk.msg.attachment.MsgAttachment;
+import com.netease.nimlib.sdk.msg.constant.AttachStatusEnum;
+import com.netease.nimlib.sdk.msg.constant.MsgDirectionEnum;
+import com.netease.nimlib.sdk.msg.constant.MsgTypeEnum;
+import com.netease.nimlib.sdk.msg.constant.SessionTypeEnum;
+import com.netease.nimlib.sdk.msg.model.IMMessage;
+import com.netease.nimlib.sdk.team.model.Team;
+import com.netease.sdfnash.uikit.NimUIKit;
+import com.netease.sdfnash.uikit.cache.TeamDataCache;
+import com.netease.sdfnash.uikit.common.ui.dialog.EasyAlertDialogHelper;
+import com.netease.sdfnash.uikit.common.ui.popupmenu.NIMPopupMenu;
+import com.netease.sdfnash.uikit.common.ui.popupmenu.PopupMenuItem;
+import com.netease.sdfnash.uikit.session.SessionCustomization;
+import com.netease.sdfnash.uikit.session.SessionEventListener;
+import com.netease.sdfnash.uikit.session.actions.BaseAction;
+import com.netease.sdfnash.uikit.session.helper.MessageListPanelHelper;
+import com.netease.sdfnash.uikit.session.module.MsgForwardFilter;
+import com.netease.sdfnash.uikit.team.model.TeamExtras;
+import com.netease.sdfnash.uikit.team.model.TeamRequestCode;
 import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.R;
-import com.tarot.sdfnash.tarot.contact.activity.UserProfileActivity;
-import com.tarot.sdfnash.tarot.session.action.AVChatAction;
+import com.tarot.sdfnash.tarot.registnew.activity.CreateOrderActivity;
 import com.tarot.sdfnash.tarot.session.action.FileAction;
 import com.tarot.sdfnash.tarot.session.action.GuessAction;
-import com.tarot.sdfnash.tarot.session.action.RTSAction;
-import com.tarot.sdfnash.tarot.session.action.SnapChatAction;
 import com.tarot.sdfnash.tarot.session.action.TipAction;
 import com.tarot.sdfnash.tarot.session.activity.MessageHistoryActivity;
 import com.tarot.sdfnash.tarot.session.activity.MessageInfoActivity;
@@ -34,30 +53,6 @@ import com.tarot.sdfnash.tarot.session.viewholder.MsgViewHolderRTS;
 import com.tarot.sdfnash.tarot.session.viewholder.MsgViewHolderSnapChat;
 import com.tarot.sdfnash.tarot.session.viewholder.MsgViewHolderSticker;
 import com.tarot.sdfnash.tarot.session.viewholder.MsgViewHolderTip;
-import com.netease.sdfnash.uikit.NimUIKit;
-import com.netease.sdfnash.uikit.cache.TeamDataCache;
-import com.netease.sdfnash.uikit.common.ui.dialog.EasyAlertDialogHelper;
-import com.netease.sdfnash.uikit.common.ui.popupmenu.NIMPopupMenu;
-import com.netease.sdfnash.uikit.common.ui.popupmenu.PopupMenuItem;
-import com.netease.sdfnash.uikit.session.SessionCustomization;
-import com.netease.sdfnash.uikit.session.SessionEventListener;
-import com.netease.sdfnash.uikit.session.actions.BaseAction;
-import com.netease.sdfnash.uikit.session.helper.MessageListPanelHelper;
-import com.netease.sdfnash.uikit.session.module.MsgForwardFilter;
-import com.netease.sdfnash.uikit.team.model.TeamExtras;
-import com.netease.sdfnash.uikit.team.model.TeamRequestCode;
-import com.netease.nimlib.sdk.NIMClient;
-import com.netease.nimlib.sdk.avchat.constant.AVChatType;
-import com.netease.nimlib.sdk.avchat.model.AVChatAttachment;
-import com.netease.nimlib.sdk.msg.MsgService;
-import com.netease.nimlib.sdk.msg.attachment.FileAttachment;
-import com.netease.nimlib.sdk.msg.attachment.MsgAttachment;
-import com.netease.nimlib.sdk.msg.constant.AttachStatusEnum;
-import com.netease.nimlib.sdk.msg.constant.MsgDirectionEnum;
-import com.netease.nimlib.sdk.msg.constant.MsgTypeEnum;
-import com.netease.nimlib.sdk.msg.constant.SessionTypeEnum;
-import com.netease.nimlib.sdk.msg.model.IMMessage;
-import com.netease.nimlib.sdk.team.model.Team;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,6 +73,8 @@ public class SessionHelper {
     private static NIMPopupMenu popupMenu;
     private static List<PopupMenuItem> menuItemList;
 
+    private static String account1;
+
     public static void init() {
         // 注册自定义消息附件解析器
         NIMClient.getService(MsgService.class).registerCustomAttachmentParser(new CustomAttachParser());
@@ -94,6 +91,7 @@ public class SessionHelper {
 
     public static void startP2PSession(Context context, String account) {
         if (!DemoCache.getAccount().equals(account)) {
+           account1=account;
             NimUIKit.startChatting(context, account, SessionTypeEnum.P2P, getP2pCustomization());
         } else {
             NimUIKit.startChatting(context, account, SessionTypeEnum.P2P, getMyP2pCustomization());
@@ -134,15 +132,15 @@ public class SessionHelper {
 
             // 定制加号点开后可以包含的操作， 默认已经有图片，视频等消息了
             ArrayList<BaseAction> actions = new ArrayList<>();
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-                actions.add(new AVChatAction(AVChatType.AUDIO));
-                actions.add(new AVChatAction(AVChatType.VIDEO));
-            }
-            actions.add(new RTSAction());
-            actions.add(new SnapChatAction());
-            actions.add(new GuessAction());
-            actions.add(new FileAction());
-            actions.add(new TipAction());
+//            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+//                actions.add(new AVChatAction(AVChatType.AUDIO));
+//                actions.add(new AVChatAction(AVChatType.VIDEO));
+//            }
+//            actions.add(new RTSAction());
+//            actions.add(new SnapChatAction());
+//            actions.add(new GuessAction());
+//            actions.add(new FileAction());
+//            actions.add(new TipAction());
             p2pCustomization.actions = actions;
             p2pCustomization.withSticker = true;
 
@@ -151,10 +149,13 @@ public class SessionHelper {
             SessionCustomization.OptionsButton cloudMsgButton = new SessionCustomization.OptionsButton() {
                 @Override
                 public void onClick(Context context, View view, String sessionId) {
-                    initPopuptWindow(context, view, sessionId, SessionTypeEnum.P2P);
+//                    initPopuptWindow(context, view, sessionId, SessionTypeEnum.P2P);
+                    Intent i=new Intent(context, CreateOrderActivity.class);
+                    i.putExtra("user_accid",account1);
+                    context.startActivity(i);
                 }
             };
-            cloudMsgButton.iconId = R.drawable.nim_ic_messge_history;
+            cloudMsgButton.iconId = R.drawable.ic_order_title;
 
             SessionCustomization.OptionsButton infoButton = new SessionCustomization.OptionsButton() {
                 @Override
@@ -166,7 +167,7 @@ public class SessionHelper {
             infoButton.iconId = R.drawable.nim_ic_message_actionbar_p2p_add;
 
             buttons.add(cloudMsgButton);
-            buttons.add(infoButton);
+//            buttons.add(infoButton);
             p2pCustomization.buttons = buttons;
         }
 
@@ -210,9 +211,9 @@ public class SessionHelper {
 
             // 定制加号点开后可以包含的操作， 默认已经有图片，视频等消息了
             ArrayList<BaseAction> actions = new ArrayList<>();
-            actions.add(new SnapChatAction());
-            actions.add(new GuessAction());
-            actions.add(new FileAction());
+//            actions.add(new SnapChatAction());
+//            actions.add(new GuessAction());
+//            actions.add(new FileAction());
             myP2pCustomization.actions = actions;
             myP2pCustomization.withSticker = true;
             // 定制ActionBar右边的按钮，可以加多个
@@ -310,7 +311,7 @@ public class SessionHelper {
             @Override
             public void onAvatarClicked(Context context, IMMessage message) {
                 // 一般用于打开用户资料页面
-                UserProfileActivity.start(context, message.getFromAccount());
+              //  UserProfileActivity.start(context, message.getFromAccount());
             }
 
             @Override

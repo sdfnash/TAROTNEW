@@ -16,8 +16,6 @@
 
 package com.tarot.sdfnash.tarot.common.ui.viewpager;
 
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
@@ -43,10 +41,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.netease.sdfnash.uikit.common.util.sys.ScreenUtil;
 import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.main.reminder.ReminderItem;
 import com.tarot.sdfnash.tarot.main.reminder.ReminderSettings;
-import com.netease.sdfnash.uikit.common.util.sys.ScreenUtil;
+
+import java.util.Locale;
 
 public class PagerSlidingTabStrip extends HorizontalScrollView implements OnPageChangeListener {
 
@@ -346,7 +346,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView implements OnPage
         }
         int unread = item.unread();
         boolean indicator = item.indicator();
-        unreadLbl.setVisibility(unread > 0 ? View.VISIBLE : View.GONE);
+     //   unreadLbl.setVisibility(unread > 0 ? View.VISIBLE : View.GONE);
         indicatorView.setVisibility(indicator ? View.VISIBLE : View.GONE);
         if (unread > 0) {
             unreadLbl.setText(String.valueOf(ReminderSettings.unreadMessageShowRule(unread)));

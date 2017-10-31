@@ -15,9 +15,11 @@ import android.widget.TextView;
 
 import com.tarot.sdfnash.tarot.R;
 import com.tarot.sdfnash.tarot.registnew.Model.TarotListModel;
+import com.tarot.sdfnash.tarot.registnew.Model.TarotModel;
 import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
 import com.tarot.sdfnash.tarot.registnew.activity.MainMessageActivity;
 import com.netease.sdfnash.uikit.common.ui.imageview.ImageViewEx;
+import com.tarot.sdfnash.tarot.registnew.activity.TarotActivity;
 import com.tarot.sdfnash.tarot.session.SessionHelper;
 
 import java.util.List;
@@ -33,7 +35,7 @@ public class FindingFragment extends MainTabFragment {
     public Handler mHandler;
 
     private GridView find_grid;
-    private List<TarotListModel.DataBean.Tarot> tarotList;//存储从服务器端传过来的塔罗师信息列
+    private List<TarotModel> tarotList;//存储从服务器端传过来的塔罗师信息列
 
 
     @Override
@@ -80,7 +82,7 @@ public class FindingFragment extends MainTabFragment {
                  * star : 3.0
                  * yx_accid : taluoshi_3
                  */
-                tarotList=tarotListModel.getList();
+                tarotList = tarotListModel.getList();
                 mAdapter.notifyDataSetChanged();
 
             }
@@ -132,17 +134,26 @@ public class FindingFragment extends MainTabFragment {
             }
             vh.mImgAvatar.load(tarotList.get(position).getPhoto());
             vh.mTvName.setText(tarotList.get(position).getNickname());
-            if("1.0".equals(tarotList.get(position).getStar())){
+            if (Double.parseDouble(tarotList.get(position).getStar()) >= 0 && Double.parseDouble(tarotList.get(position).getStar()) < 2) {
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_01));
-            }else if("2.0".equals(tarotList.get(position).getStar())){
+            } else if (Double.parseDouble(tarotList.get(position).getStar()) >= 2 && Double.parseDouble(tarotList.get(position).getStar()) < 3) {
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_02));
-            }else if("3.0".equals(tarotList.get(position).getStar())){
+            } else if (Double.parseDouble(tarotList.get(position).getStar()) >= 3 && Double.parseDouble(tarotList.get(position).getStar()) < 4) {
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_03));
-            }else if("4.0".equals(tarotList.get(position).getStar())){
+            } else if (Double.parseDouble(tarotList.get(position).getStar()) >= 4 && Double.parseDouble(tarotList.get(position).getStar()) < 5) {
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_04));
-            }else if("5.0".equals(tarotList.get(position).getStar())){
+            } else if (Double.parseDouble(tarotList.get(position).getStar()) == 5) {
                 vh.mTvPoint.setImageDrawable(getResources().getDrawable(R.drawable.ic_stat_05));
             }
+            vh.mImgAvatar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getActivity(), TarotActivity.class);
+                    i.putExtra("tls_accid", tarotList.get(position).getYx_accid());
+                    i.putExtra("t_id", tarotList.get(position).getId());
+                    startActivity(i);
+                }
+            });
             /**
              * id : 3
              * nickname : aaa23
@@ -156,10 +167,10 @@ public class FindingFragment extends MainTabFragment {
             vh.mTvComment.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i=new Intent(getActivity(), MainMessageActivity.class);
-                    i.putExtra("tId",tarotList.get(position).getId());
-                    i.putExtra("yx_accid",tarotList.get(position).getYx_accid());
-
+                    Intent i = new Intent(getActivity(), MainMessageActivity.class);
+                    i.putExtra("tId", tarotList.get(position).getId());
+                    i.putExtra("yx_accid", tarotList.get(position).getYx_accid());
+                    i.putExtra("page", 1);
                     startActivity(i);
                 }
             });
@@ -204,7 +215,6 @@ public class FindingFragment extends MainTabFragment {
 //            }
 //            list.add(map);
 //        }
-
 
 
         swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_light, android.R.color.holo_red_light, android.R.color.holo_orange_light, android.R.color.holo_green_light);

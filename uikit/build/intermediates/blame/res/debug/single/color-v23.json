@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/color-v23/abc_color_highlight_material.xml"
     }
 ]

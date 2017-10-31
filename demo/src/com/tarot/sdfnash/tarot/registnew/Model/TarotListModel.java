@@ -60,7 +60,7 @@ public class TarotListModel implements Serializable{
          * yx_accid : taluoshi_3
          */
 
-        private java.util.List<Tarot> list;
+        private java.util.List<TarotModel> list;
 
         public int getCount() {
             return count;
@@ -86,11 +86,11 @@ public class TarotListModel implements Serializable{
             this.total = total;
         }
 
-        public List<Tarot> getList() {
+        public List<TarotModel> getList() {
             return list;
         }
 
-        public void setList(List<Tarot> list) {
+        public void setList(List<TarotModel> list) {
             this.list = list;
         }
 

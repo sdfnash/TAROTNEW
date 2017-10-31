@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.netease.sdfnash.uikit.common.activity.UI;
@@ -30,9 +31,9 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
     private int mSpeed, mHelp, mService, mRight;
     private boolean isChange;
     private int o_id;//订单id
-    private int haoping, want;
-    String comment;
-
+    private int haoping=1, want=1;
+    String comment,t_id,name;
+    private TextView title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,13 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
         ToolBarOptions options = new ToolBarOptions();
         setToolBar(R.id.toolbar, options);
         cmtId = getIntent().getStringExtra("cmtId");
+        t_id=getIntent().getStringExtra("t_id");
+        name=getIntent().getStringExtra("name");
+        title=findView(R.id.title_comment);
+        if(!TextUtils.isEmpty(name)){
+            title.setText("评价"+name+"的服务");
+        }
+
         mGroupComment = findView(R.id.radio_group_comment);
         mGroupWill = findView(R.id.radio_group_will);
         mBtnGood = findView(R.id.radio_comment_good);
@@ -141,7 +149,7 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
 
             if (isChange) {//修改
                 RegistHttpClient.getInstance().editCode(Preferences.getUserId(), Preferences.getUserToken()
-                        , o_id, comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.EditHttpCallBack<Void>() {
+                        , Integer.parseInt(cmtId), comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.EditHttpCallBack<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 setResult(Activity.RESULT_OK);
@@ -155,9 +163,10 @@ public class CommitCommentActivity extends UI implements RatingBar.OnRatingBarCh
                         });
             } else {//新增
                 RegistHttpClient.getInstance().addCode(Preferences.getUserId(), Preferences.getUserToken()
-                        , o_id, comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.AddHttpCallBack<Void>() {
+                        ,Integer.parseInt(cmtId), comment, mSpeed, mService, mRight, mHelp, want, haoping, new RegistHttpClient.AddHttpCallBack<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
+                                setResult(Activity.RESULT_OK);
                                 finish();
                             }
 

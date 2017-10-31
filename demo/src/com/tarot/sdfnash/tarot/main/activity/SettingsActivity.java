@@ -150,11 +150,11 @@ public class SettingsActivity extends UI implements SettingsAdapter.SwitchChange
         items.add(new SettingTemplate(TAG_MSG_IGNORE, "过滤通知",
                 SettingType.TYPE_TOGGLE, UserPreferences.getMsgIgnore()));
 
-        items.add(new SettingTemplate(TAG_CLEAR, getString(R.string.about_clear_msg_history)));
-        items.add(SettingTemplate.addLine());
+     //   items.add(new SettingTemplate(TAG_CLEAR, getString(R.string.about_clear_msg_history)));
+     //   items.add(SettingTemplate.addLine());
         items.add(new SettingTemplate(TAG_CUSTOM_NOTIFY, getString(R.string.custom_notification)));
         items.add(SettingTemplate.addLine());
-        items.add(new SettingTemplate(TAG_ABOUT, getString(R.string.setting_about)));
+//        items.add(new SettingTemplate(TAG_ABOUT, getString(R.string.setting_about)));
     }
 
     private void onListItemClick(SettingTemplate item) {

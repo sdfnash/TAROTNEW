@@ -1,5 +1,7 @@
 package com.tarot.sdfnash.tarot.registnew.Model;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -128,12 +130,17 @@ public class CommentListModel implements Serializable{
             private String zhongping_count;
             private String chaping_count;
             private String total_count;
-            private double haopinglv;
-            private double avg_star1;
-            private double avg_star2;
-            private double avg_star3;
-            private double avg_star4;
-            private double avg_star;
+            private String haopinglv;
+            @JSONField(name = "star1")
+            private String avg_star1;
+            @JSONField(name = "star2")
+            private String avg_star2;
+            @JSONField(name = "star3")
+            private String avg_star3;
+            @JSONField(name = "star4")
+            private String avg_star4;
+            @JSONField(name = "star_avg")
+            private String avg_star;
             private String tls_id;
             private String tls_nickname;
             private String tls_accid;
@@ -171,51 +178,51 @@ public class CommentListModel implements Serializable{
                 this.total_count = total_count;
             }
 
-            public double getHaopinglv() {
+            public String getHaopinglv() {
                 return haopinglv;
             }
 
-            public void setHaopinglv(double haopinglv) {
+            public void setHaopinglv(String haopinglv) {
                 this.haopinglv = haopinglv;
             }
 
-            public double getAvg_star1() {
+            public String getAvg_star1() {
                 return avg_star1;
             }
 
-            public void setAvg_star1(double avg_star1) {
+            public void setAvg_star1(String avg_star1) {
                 this.avg_star1 = avg_star1;
             }
 
-            public double getAvg_star2() {
+            public String getAvg_star2() {
                 return avg_star2;
             }
 
-            public void setAvg_star2(double avg_star2) {
+            public void setAvg_star2(String avg_star2) {
                 this.avg_star2 = avg_star2;
             }
 
-            public double getAvg_star3() {
+            public String getAvg_star3() {
                 return avg_star3;
             }
 
-            public void setAvg_star3(double avg_star3) {
+            public void setAvg_star3(String avg_star3) {
                 this.avg_star3 = avg_star3;
             }
 
-            public double getAvg_star4() {
+            public String getAvg_star4() {
                 return avg_star4;
             }
 
-            public void setAvg_star4(double avg_star4) {
+            public void setAvg_star4(String avg_star4) {
                 this.avg_star4 = avg_star4;
             }
 
-            public double getAvg_star() {
+            public String getAvg_star() {
                 return avg_star;
             }
 
-            public void setAvg_star(double avg_star) {
+            public void setAvg_star(String avg_star) {
                 this.avg_star = avg_star;
             }
 

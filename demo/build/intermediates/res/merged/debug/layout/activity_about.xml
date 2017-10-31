@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.taluo.myapplication.MainActivity">
+    >
 
     <TextView
         android:layout_width="80dp"
@@ -49,6 +49,29 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t5"
+        android:text="用户反馈"
+        android:textColor="#eb6689"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_below="@+id/t4"
+        android:layout_alignRight="@+id/t1"
+        android:layout_alignEnd="@+id/t1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t6"
+        android:text="用户协议"
+        android:textColor="#eb6689"
+        android:layout_alignTop="@+id/t5"
+        android:layout_toRightOf="@+id/t5"
+        android:layout_toEndOf="@+id/t5" />
 
 
 </RelativeLayout>

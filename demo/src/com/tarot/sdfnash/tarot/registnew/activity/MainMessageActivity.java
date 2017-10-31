@@ -9,12 +9,14 @@ import com.tarot.sdfnash.tarot.registnew.fragment.MainMessageFragment;
 
 public class MainMessageActivity extends AppCompatActivity {
     private String tId,sId,yx_accid;
+    private int page;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_message);
         tId=getIntent().getStringExtra("tId");
         sId=getIntent().getStringExtra("sId");
+        page=getIntent().getIntExtra("page",1);
         yx_accid=getIntent().getStringExtra("yx_accid");
         final MainMessageFragment f=new MainMessageFragment();
         f.settId(tId);
@@ -25,7 +27,7 @@ public class MainMessageActivity extends AppCompatActivity {
         h.post(new Runnable() {
             @Override
             public void run() {
-                f.setCurrentItem(1);
+                f.setCurrentItem(page);
             }
         });
 

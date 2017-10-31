@@ -17,17 +17,17 @@ public final class R {
 		public static final int activity_vertical_margin = 0x7f09004f;
 	}
 	public static final class drawable {
-		public static final int pingpp_back = 0x7f0201db;
-		public static final int tips_bg = 0x7f020207;
+		public static final int pingpp_back = 0x7f0201df;
+		public static final int tips_bg = 0x7f02020b;
 	}
 	public static final class id {
-		public static final int pingpp_back = 0x7f0e00b1;
-		public static final int pingpp_progressbar = 0x7f0e00b3;
-		public static final int pingpp_title = 0x7f0e00b0;
-		public static final int pingpp_webView = 0x7f0e00b2;
+		public static final int pingpp_back = 0x7f0e00c3;
+		public static final int pingpp_progressbar = 0x7f0e00c5;
+		public static final int pingpp_title = 0x7f0e00c2;
+		public static final int pingpp_webView = 0x7f0e00c4;
 	}
 	public static final class layout {
-		public static final int activity_pingpp_payment = 0x7f030025;
+		public static final int activity_pingpp_payment = 0x7f030028;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f0a008d;

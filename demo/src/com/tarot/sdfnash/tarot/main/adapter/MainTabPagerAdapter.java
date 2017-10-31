@@ -1,15 +1,15 @@
 package com.tarot.sdfnash.tarot.main.adapter;
 
-import java.util.List;
+import android.content.Context;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 
 import com.tarot.sdfnash.tarot.common.ui.viewpager.SlidingTabPagerAdapter;
 import com.tarot.sdfnash.tarot.main.fragment.MainTabFragment;
 import com.tarot.sdfnash.tarot.main.model.MainTab;
 
-import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
+import java.util.List;
 
 public class MainTabPagerAdapter extends SlidingTabPagerAdapter {
 

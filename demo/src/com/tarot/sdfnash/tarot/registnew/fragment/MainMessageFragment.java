@@ -58,6 +58,8 @@ public class MainMessageFragment extends AbsViewPagerWithTitleFragment {
             case TAB_MESSAGE: {
                 if (tabs[TAB_MESSAGE] == null) {
                     tabs[TAB_MESSAGE] = new MainServiceFragment();
+                    ((MainServiceFragment)tabs[TAB_MESSAGE]).setYxTlsId(yx_accid);
+                    ((MainServiceFragment)tabs[TAB_MESSAGE]).settId(tId);
                 }
                 return tabs[TAB_MESSAGE];
             }

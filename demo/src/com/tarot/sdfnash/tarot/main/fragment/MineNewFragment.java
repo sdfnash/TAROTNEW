@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.netease.nimlib.sdk.NIMClient;
+import com.netease.nimlib.sdk.auth.AuthService;
 import com.netease.sdfnash.uikit.common.ui.imageview.HeadImageView;
 import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.R;
@@ -14,11 +16,10 @@ import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.main.activity.MainActivity;
 import com.tarot.sdfnash.tarot.main.activity.SettingsActivity;
 import com.tarot.sdfnash.tarot.registnew.activity.AboutActivity;
-import com.netease.nimlib.sdk.NIMClient;
-import com.netease.nimlib.sdk.auth.AuthService;
-import com.tarot.sdfnash.tarot.registnew.activity.MyCollectionActivity;
-import com.tarot.sdfnash.tarot.registnew.activity.MyCommentActivity;
+import com.tarot.sdfnash.tarot.registnew.activity.CommentTarotActivity;
 import com.tarot.sdfnash.tarot.registnew.activity.OrderActivity;
+import com.tarot.sdfnash.tarot.registnew.activity.ServiceTarotActivity;
+import com.tarot.sdfnash.tarot.registnew.activity.UserInfoActivity;
 
 public class MineNewFragment extends MainTabFragment implements View.OnClickListener {
     private RelativeLayout mLayoutJudge, mLayoutNotice, mLayoutOrder, mLayoutSetting, mLayoutAbout;
@@ -31,11 +32,13 @@ public class MineNewFragment extends MainTabFragment implements View.OnClickList
             Intent i=new Intent(getActivity(), AboutActivity.class);
             startActivity(i);
         } else if (v.equals(mLayoutJudge)) {
-            Intent i=new Intent(getActivity(), MyCommentActivity.class);
+            Intent i=new Intent(getActivity(), CommentTarotActivity.class);
             startActivity(i);
+           // Toast.makeText(getActivity(),"doing",Toast.LENGTH_SHORT).show();
         } else if (v.equals(mLayoutNotice)) {
-            Intent i=new Intent(getActivity(), MyCollectionActivity.class);
+            Intent i=new Intent(getActivity(), ServiceTarotActivity.class);
             startActivity(i);
+           // Toast.makeText(getActivity(),"doing",Toast.LENGTH_SHORT).show();
         } else if (v.equals(mLayoutOrder)) {
             Intent i=new Intent(getActivity(), OrderActivity.class);
             startActivity(i);
@@ -44,13 +47,24 @@ public class MineNewFragment extends MainTabFragment implements View.OnClickList
             startActivity(i);
         } else if (v.equals(mBtnLogOut)) {
             logout();
+        }else if (v.equals(mHeaderImage)) {
+            UserInfoActivity.startFromLogin(getActivity(), null);
         }
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
+        if (mHeaderImage != null) {
+            if (!TextUtils.isEmpty(DemoCache.getAccount())) {
+                mHeaderImage.loadBuddyAvatar(DemoCache.getAccount());
+            } else {
+                mHeaderImage.setImageResource(R.drawable.ic_logo);
+            }
+        }
+        if(mTvName!=null){
+            mTvName.setText(Preferences.getKeyUserNickname() + "/" + Preferences.getUserAccount());
+        }
     }
 
     @Override
@@ -72,10 +86,12 @@ public class MineNewFragment extends MainTabFragment implements View.OnClickList
         mLayoutOrder.setOnClickListener(this);
         mLayoutSetting.setOnClickListener(this);
         mBtnLogOut.setOnClickListener(this);
+
     }
 
     public void initUser(){
         mHeaderImage=(HeadImageView)getView().findViewById(R.id.setting_tarot_avatar);
+        mHeaderImage.setOnClickListener(this);
         mTvName=(TextView)getView().findViewById(R.id.setting_name);
         if(!TextUtils.isEmpty(DemoCache.getAccount())){
             mHeaderImage.loadBuddyAvatar(DemoCache.getAccount());

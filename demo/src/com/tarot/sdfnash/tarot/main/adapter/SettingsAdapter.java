@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.tarot.sdfnash.tarot.DemoCache;
 import com.tarot.sdfnash.tarot.R;
+import com.tarot.sdfnash.tarot.config.preference.Preferences;
 import com.tarot.sdfnash.tarot.main.model.SettingTemplate;
 import com.tarot.sdfnash.tarot.main.model.SettingType;
 import com.netease.sdfnash.uikit.cache.NimUserInfoCache;
@@ -144,7 +145,7 @@ public class SettingsAdapter extends BaseAdapter {
         viewHolder.headTitleView.setVisibility(View.VISIBLE);
         viewHolder.headTitleView.setText(NimUserInfoCache.getInstance().getUserDisplayName(DemoCache.getAccount()));
         viewHolder.headDetailView.setVisibility(View.VISIBLE);
-        viewHolder.headDetailView.setText(String.format("帐号:%s", DemoCache.getAccount()));
+        viewHolder.headDetailView.setText(String.format("手机号:%s", Preferences.getUserAccount()));
         viewHolder.titleView.setVisibility(View.GONE);
         viewHolder.headImageView.loadBuddyAvatar(DemoCache.getAccount());
         viewHolder.indicator.setImageResource(R.drawable.nim_arrow_right);

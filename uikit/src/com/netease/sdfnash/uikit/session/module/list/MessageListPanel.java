@@ -654,7 +654,7 @@ public class MessageListPanel implements TAdapterDelegate {
                 // 5 forward to person
                 longClickItemForwardToPerson(selectedItem, alertDialog);
                 // 6 forward to team
-                longClickItemForwardToTeam(selectedItem, alertDialog);
+               // longClickItemForwardToTeam(selectedItem, alertDialog);
             }
         }
 

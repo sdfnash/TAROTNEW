@@ -1,982 +1,1002 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:2:1-401:12
-	xmlns:android
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:2:11-69
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:2:1-406:12
 	package
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:3:5-38
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:3:5-38
 	android:versionName
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:6:5-32
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:6:5-32
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
 	android:versionCode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:5:5-29
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:5:5-29
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:4:5-35
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:4:5-35
 uses-permission#android.permission.INTERNET
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:10:5-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:10:22-64
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:11:5-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:11:22-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:12:5-76
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:12:22-73
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:12:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:13:5-76
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:13:22-73
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:13:22-73
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:14:5-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:14:5-79
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:14:22-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:15:5-81
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:15:22-78
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:16:5-73
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:16:5-73
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:16:22-70
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:16:22-70
 uses-permission#android.permission.GET_TASKS
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:19:5-68
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:19:5-68
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:19:22-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:19:22-65
 uses-permission#android.permission.FLASHLIGHT
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:20:5-69
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:20:5-69
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:20:22-66
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:20:22-66
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:21:5-66
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:21:5-66
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:21:22-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:21:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:22:5-68
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:22:5-68
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:22:22-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:22:22-65
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:23:5-68
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:23:5-68
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:23:22-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:23:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:24:5-74
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:24:5-74
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:24:22-71
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:24:22-71
 uses-permission#android.permission.CHANGE_CONFIGURATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:25:5-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:25:22-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:25:22-76
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:26:5-80
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:26:5-80
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:26:22-77
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:26:22-77
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:29:5-80
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:29:5-80
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:29:22-77
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:29:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:30:5-81
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:30:22-78
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:30:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:33:5-65
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:33:5-65
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:33:22-62
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:33:22-62
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:34:5-71
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:34:5-71
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:34:22-68
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:34:22-68
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:35:5-75
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:35:5-75
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:35:22-72
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:35:22-72
 permission#com.netease.sdfnash.tarot.permission.RECEIVE_MSG
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:39:5-41:47
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:39:5-41:47
 	android:protectionLevel
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:41:9-44
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:41:9-44
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:40:9-72
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:40:9-72
 uses-permission#com.netease.sdfnash.tarot.permission.RECEIVE_MSG
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:44:5-88
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:44:5-88
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:44:22-85
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:44:22-85
 uses-permission#android.permission.NFC
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:54:5-62
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:54:5-62
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:54:22-59
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:54:22-59
 uses-permission#android.permission.READ_SMS
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:59:5-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:59:5-67
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:59:22-64
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:59:22-64
 application
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:61:5-399:19
-MERGED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:9:5-137:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.3.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:61:5-404:19
+MERGED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:9:5-137:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.3.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:65:9-41
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:65:9-41
 	android:allowBackup
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:63:9-35
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:63:9-35
 	android:icon
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:64:9-41
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:64:9-46
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:66:9-52
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:66:9-52
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:62:9-39
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:62:9-39
 meta-data#com.amap.api.v2.apikey
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:69:9-71:43
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:70:13-50
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:69:9-71:43
 	android:value
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:71:13-40
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:71:13-40
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:70:13-50
 meta-data#com.netease.nim.appKey
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:72:9-74:64
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:73:13-50
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:72:9-74:64
 	android:value
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:74:13-61
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:74:13-61
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:73:13-50
 uses-library#com.google.android.maps
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:76:9-78:40
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:76:9-78:40
 	android:required
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:78:13-37
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:78:13-37
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:77:13-51
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:77:13-51
 activity#com.tarot.sdfnash.tarot.main.activity.WelcomeActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:81:9-96:20
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:89:13-52
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:81:9-96:20
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:87:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:87:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:85:13-45
-	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:83:13-63
-	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:88:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:85:13-45
 	android:hardwareAccelerated
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:84:13-47
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:82:13-58
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:84:13-47
 	android:launchMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:86:13-43
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:86:13-43
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:89:13-52
+	android:configChanges
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:83:13-63
+	android:theme
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:88:13-65
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:82:13-58
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+android.intent.category.MULTIWINDOW_LAUNCHER
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:90:13-95:29
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:90:13-95:29
 action#android.intent.action.MAIN
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:91:17-69
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:91:17-69
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:91:25-66
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:91:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:93:17-77
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:93:17-77
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:93:27-74
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:93:27-74
 category#android.intent.category.MULTIWINDOW_LAUNCHER
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:94:17-89
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:94:17-89
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:94:27-86
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:94:27-86
 activity#com.tarot.sdfnash.tarot.main.activity.MainActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:99:9-106:55
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:106:13-52
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:99:9-106:55
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:104:13-49
-	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:101:13-63
-	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:105:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:104:13-49
 	android:hardwareAccelerated
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:102:13-47
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:100:13-55
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:102:13-47
 	android:launchMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:103:13-43
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:103:13-43
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:106:13-52
+	android:configChanges
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:101:13-63
+	android:theme
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:105:13-56
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:100:13-55
 activity#com.tarot.sdfnash.tarot.main.activity.MultiportActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:109:9-114:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:114:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:109:9-114:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:112:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:112:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:114:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:111:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:111:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:113:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:113:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:110:13-60
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:110:13-60
 activity#com.tarot.sdfnash.tarot.login.LoginActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:117:9-123:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:123:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:117:9-123:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:121:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:121:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:120:13-42
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:120:13-42
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:123:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:119:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:119:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:122:13-46
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:122:13-46
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:118:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:118:13-48
 activity#com.tarot.sdfnash.tarot.main.activity.AboutActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:126:9-132:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:132:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:126:9-132:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:130:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:130:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:129:13-42
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:129:13-42
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:132:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:128:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:128:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:131:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:131:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:127:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:127:13-56
 activity#com.tarot.sdfnash.tarot.main.activity.SettingsActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:133:9-138:63
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:138:13-60
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:133:9-138:63
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:136:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:136:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:138:13-60
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:135:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:135:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:137:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:137:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:134:13-59
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:134:13-59
 activity#com.tarot.sdfnash.tarot.main.activity.NoDisturbActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:139:9-144:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:144:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:139:9-144:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:142:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:142:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:144:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:141:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:141:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:143:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:143:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:140:13-60
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:140:13-60
 activity#com.tarot.sdfnash.tarot.contact.activity.AddFriendActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:145:9-150:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:150:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:145:9-150:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:148:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:148:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:150:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:147:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:147:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:149:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:149:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:146:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:146:13-63
 activity#com.tarot.sdfnash.tarot.contact.activity.UserProfileActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:151:9-156:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:156:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:151:9-156:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:154:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:154:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:156:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:153:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:153:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:155:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:155:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:152:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:152:13-65
 activity#com.tarot.sdfnash.tarot.contact.activity.UserProfileSettingActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:157:9-162:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:162:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:157:9-162:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:160:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:160:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:162:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:159:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:159:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:161:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:161:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:158:13-72
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:158:13-72
 activity#com.tarot.sdfnash.tarot.contact.activity.UserProfileEditItemActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:163:9-168:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:168:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:163:9-168:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:166:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:166:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:168:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:165:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:165:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:167:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:167:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:164:13-73
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:164:13-73
 activity#com.tarot.sdfnash.tarot.contact.activity.BlackListActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:169:9-174:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:174:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:169:9-174:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:172:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:172:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:174:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:171:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:171:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:173:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:173:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:170:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:170:13-63
 activity#com.tarot.sdfnash.tarot.file.browser.FileBrowserActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:177:9-183:75
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:183:13-72
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:177:9-183:75
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:181:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:181:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:180:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:180:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:183:13-72
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:179:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:179:13-48
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:182:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:182:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:178:13-61
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:178:13-61
 activity#com.tarot.sdfnash.tarot.main.activity.SystemMessageActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:184:9-189:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:189:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:184:9-189:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:187:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:187:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:189:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:186:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:186:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:188:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:188:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:185:13-64
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:185:13-64
 activity#com.tarot.sdfnash.tarot.main.activity.CustomNotificationActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:190:9-195:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:195:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:190:9-195:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:193:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:193:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:195:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:192:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:192:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:194:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:194:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:191:13-69
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:191:13-69
 activity#com.tarot.sdfnash.tarot.session.activity.MessageHistoryActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:196:9-201:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:201:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:196:9-201:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:199:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:199:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:201:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:198:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:198:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:200:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:200:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:197:13-68
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:197:13-68
 activity#com.tarot.sdfnash.tarot.session.activity.MessageInfoActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:202:9-207:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:207:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:202:9-207:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:205:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:205:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:207:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:204:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:204:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:206:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:206:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:203:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:203:13-65
 activity#com.tarot.sdfnash.tarot.team.activity.AdvancedTeamSearchActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:208:9-213:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:213:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:208:9-213:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:211:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:211:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:213:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:210:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:210:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:212:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:212:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:209:13-69
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:209:13-69
 activity#com.tarot.sdfnash.tarot.team.activity.AdvancedTeamJoinActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:214:9-219:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:219:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:214:9-219:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:217:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:217:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:219:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:216:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:216:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:218:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:218:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:215:13-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:215:13-67
 activity#com.tarot.sdfnash.tarot.main.activity.TeamListActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:220:9-225:67
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:225:13-64
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:220:9-225:67
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:223:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:223:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:225:13-64
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:222:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:222:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:224:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:224:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:221:13-59
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:221:13-59
 activity#com.tarot.sdfnash.tarot.main.activity.GlobalSearchActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:228:9-233:62
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:233:13-59
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:228:9-233:62
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:231:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:231:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:233:13-59
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:230:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:230:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:232:13-52
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:232:13-52
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:229:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:229:13-63
 activity#com.tarot.sdfnash.tarot.session.activity.WatchSnapChatPictureActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:236:9-239:59
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:236:9-239:59
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:238:13-51
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:238:13-51
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:239:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:239:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:237:13-74
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:237:13-74
 activity#com.tarot.sdfnash.tarot.location.activity.LocationAmapActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:241:9-246:59
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:241:9-246:59
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:245:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:245:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:244:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:244:13-49
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:243:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:243:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:246:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:246:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:242:13-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:242:13-67
 activity#com.tarot.sdfnash.tarot.location.activity.NavigationAmapActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:247:9-252:59
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:247:9-252:59
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:251:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:251:13-49
 	android:label
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:250:13-54
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:250:13-54
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:249:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:249:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:252:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:252:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:248:13-69
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:248:13-69
 activity#com.tarot.sdfnash.tarot.avchat.activity.AVChatActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:255:9-260:63
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:260:13-60
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:255:9-260:63
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:258:13-49
-	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:259:13-51
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:256:13-59
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:258:13-49
 	android:launchMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:257:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:257:13-48
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:260:13-60
+	android:theme
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:259:13-51
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:256:13-59
 activity#com.tarot.sdfnash.tarot.rts.activity.RTSActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:263:9-268:63
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:268:13-60
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:263:9-268:63
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:266:13-49
-	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:267:13-56
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:264:13-53
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:266:13-49
 	android:launchMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:265:13-48
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:265:13-48
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:268:13-60
+	android:theme
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:267:13-56
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:264:13-53
 activity#com.tarot.sdfnash.tarot.session.search.SearchMessageActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:271:9-276:72
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:276:13-69
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:271:9-276:72
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:274:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:274:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:276:13-69
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:273:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:273:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:275:13-52
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:275:13-52
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:272:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:272:13-65
 activity#com.tarot.sdfnash.tarot.session.search.DisplayMessageActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:277:9-282:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:282:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:277:9-282:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:280:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:280:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:282:13-67
 	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:279:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:279:13-63
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:281:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:281:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:278:13-66
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:278:13-66
 activity#com.tarot.sdfnash.tarot.chatroom.activity.ChatRoomActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:285:9-289:70
-	android:windowSoftInputMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:289:13-67
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:285:9-289:70
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:287:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:287:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:289:13-67
 	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:288:13-56
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:288:13-56
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:286:13-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:286:13-63
 activity#com.tarot.sdfnash.tarot.avchat.activity.AVChatSettingsActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:292:9-294:52
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:292:9-294:52
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:294:13-49
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:294:13-49
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:293:13-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:293:13-67
 service#com.netease.nimlib.service.NimService
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:297:9-299:39
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:297:9-299:39
 	android:process
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:299:13-36
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:299:13-36
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:298:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:298:13-65
 service#com.netease.nimlib.service.NimService$Aux
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:302:9-304:39
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:302:9-304:39
 	android:process
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:304:13-36
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:304:13-36
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:303:13-69
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:303:13-69
 receiver#com.netease.nimlib.service.NimReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:307:9-315:20
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:307:9-315:20
 	android:process
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:310:13-36
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:310:13-36
 	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:309:13-37
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:309:13-37
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:308:13-66
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:308:13-66
 intent-filter#android.intent.action.BOOT_COMPLETED+android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:311:13-314:29
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:311:13-314:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:312:17-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:312:17-79
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:312:25-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:312:25-76
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:313:17-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:313:17-79
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:313:25-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:313:25-76
 receiver#com.netease.nimlib.service.ResponseReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:318:9-80
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:318:9-80
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:318:19-77
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:318:19-77
 receiver#com.tarot.sdfnash.tarot.receiver.CustomNotificationReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:322:9-329:20
-	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:325:13-37
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:322:9-329:20
 	android:enabled
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:324:13-35
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:324:13-35
+	android:exported
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:325:13-37
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:323:13-64
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:323:13-64
 intent-filter#com.netease.sdfnash.tarot.ACTION.RECEIVE_CUSTOM_NOTIFICATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:326:13-328:29
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:326:13-328:29
 action#com.netease.sdfnash.tarot.ACTION.RECEIVE_CUSTOM_NOTIFICATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:327:17-103
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:327:17-103
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:327:25-100
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:327:25-100
 receiver#com.netease.nimlib.receiver.RTSBroadcastReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:332:9-339:20
-	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:335:13-37
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:332:9-339:20
 	android:enabled
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:334:13-35
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:334:13-35
+	android:exported
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:335:13-37
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:333:13-76
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:333:13-76
 intent-filter#com.netease.sdfnash.tarot.ACTION.RECEIVE_RTS_NOTIFICATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:336:13-338:29
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:336:13-338:29
 action#com.netease.sdfnash.tarot.ACTION.RECEIVE_RTS_NOTIFICATION
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:337:17-100
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:337:17-100
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:337:25-97
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:337:25-97
 receiver#com.netease.nimlib.receiver.IncomingCallReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:342:9-346:20
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:342:9-346:20
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:342:19-82
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:342:19-82
 intent-filter#android.intent.action.PHONE_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:343:13-345:29
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:343:13-345:29
 action#android.intent.action.PHONE_STATE
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:344:17-76
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:344:17-76
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:344:25-73
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:344:25-73
 service#com.netease.cosine.core.CosineService
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:349:9-351:41
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:349:9-351:41
 	android:process
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:351:13-38
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:351:13-38
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:350:13-65
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:350:13-65
 receiver#com.netease.cosine.target.CosineReceiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:353:9-356:41
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:353:9-356:41
 	android:process
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:356:13-38
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:356:13-38
 	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:355:13-36
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:355:13-36
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:354:13-68
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:354:13-68
 meta-data#com.netease.cosine.target
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:359:9-361:32
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:360:13-53
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:359:9-361:32
 	android:value
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:361:13-29
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:361:13-29
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:360:13-53
 meta-data#com.netease.cosine.target.receiver
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:362:9-364:70
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:363:13-62
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:362:9-364:70
 	android:value
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:364:13-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:364:13-67
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:363:13-62
 activity#com.tarot.sdfnash.tarot.login.ForgetPasswordActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:366:9-66
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:366:9-66
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:366:19-63
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:366:19-63
 activity#com.tarot.sdfnash.tarot.registnew.activity.CommitCommentActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:367:9-78
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:367:9-78
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:367:19-75
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:367:19-75
 activity#com.tarot.sdfnash.tarot.registnew.activity.AboutActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:368:9-70
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:368:9-70
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:368:19-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:368:19-67
 activity#com.tarot.sdfnash.tarot.registnew.activity.MainMessageActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:369:9-76
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:369:9-76
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:369:19-73
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:369:19-73
 activity#com.tarot.sdfnash.tarot.registnew.activity.UserInfoActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:370:9-73
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:370:9-73
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:370:19-70
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:370:19-70
 activity#com.pingplusplus.android.PaymentActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:373:9-377:75
-	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:375:13-59
-	android:theme
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:377:13-72
-	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:374:13-68
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:373:9-377:75
 	android:launchMode
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:376:13-43
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:376:13-43
+	android:configChanges
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:375:13-59
+	android:theme
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:377:13-72
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:374:13-68
 activity-alias#com.tarot.sdfnash.tarot.wxapi.WXPayEntryActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:380:9-383:81
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:380:9-383:81
 	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:382:13-36
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:382:13-36
 	android:targetActivity
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:383:13-78
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:383:13-78
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:381:13-53
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:381:13-53
 activity#com.alipay.sdk.app.H5PayActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:386:9-390:50
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:386:9-390:50
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:390:13-47
-	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:388:13-74
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:390:13-47
 	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:389:13-37
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:389:13-37
+	android:configChanges
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:388:13-74
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:387:13-60
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:387:13-60
 activity#com.alipay.sdk.auth.AuthActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:391:9-395:50
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:391:9-395:50
 	android:screenOrientation
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:395:13-47
-	android:configChanges
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:393:13-74
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:395:13-47
 	android:exported
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:394:13-37
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:394:13-37
+	android:configChanges
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:393:13-74
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:392:13-60
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:392:13-60
 activity#com.tarot.sdfnash.tarot.registnew.activity.ClientSDKActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:396:9-74
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:396:9-74
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:396:19-71
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:396:19-71
 activity#com.tarot.sdfnash.tarot.registnew.activity.MyCommentActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:397:9-74
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:397:9-74
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:397:19-71
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:397:19-71
 activity#com.tarot.sdfnash.tarot.registnew.activity.OrderActivity
-ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:398:9-79
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:398:9-70
 	android:name
-		ADDED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:398:19-67
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:398:19-67
+activity#com.tarot.sdfnash.tarot.registnew.activity.MyCollectionActivity
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:399:9-77
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:399:19-74
+activity#com.tarot.sdfnash.tarot.registnew.activity.TarotActivity
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:400:9-70
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:400:19-67
+activity#com.tarot.sdfnash.tarot.registnew.activity.CreateOrderActivity
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:401:9-76
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:401:19-73
+activity#com.tarot.sdfnash.tarot.registnew.activity.ServiceTarotActivity
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:402:9-77
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:402:19-74
+activity#com.tarot.sdfnash.tarot.registnew.activity.CommentTarotActivity
+ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:403:9-86
+	android:name
+		ADDED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml:403:19-74
 uses-sdk
-INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.3.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.pingxx:pingpp-core:2.1.5] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-core/2.1.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.pingxx:pingpp-alipay:2.1.5] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-alipay/2.1.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.pingxx:pingpp-upacp:2.1.5] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-upacp/2.1.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.pingxx:pingpp-wxpay:2.1.5] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-wxpay/2.1.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.pingxx:pingpp-bfb-sdk:2.1.5] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-bfb-sdk/2.1.5/AndroidManifest.xml:7:5-9:41
-	android:targetSdkVersion
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
-		INJECTED from /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.3.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/design/23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.3.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.pingxx:pingpp-core:2.1.5] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-core/2.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pingxx:pingpp-alipay:2.1.5] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-alipay/2.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pingxx:pingpp-upacp:2.1.5] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-upacp/2.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.pingxx:pingpp-wxpay:2.1.5] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-wxpay/2.1.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.pingxx:pingpp-bfb-sdk:2.1.5] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.pingxx/pingpp-bfb-sdk/2.1.5/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
+		INJECTED from /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/AndroidManifest.xml
 activity#com.netease.sdfnash.uikit.session.activity.P2PMessageActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:16:9-21:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:21:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:16:9-21:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:19:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:19:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:21:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:18:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:18:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:20:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:20:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:17:13-89
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:17:13-89
 activity#com.netease.sdfnash.uikit.session.activity.TeamMessageActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:22:9-27:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:27:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:22:9-27:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:25:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:25:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:27:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:24:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:24:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:26:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:26:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:23:13-90
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:23:13-90
 activity#com.netease.sdfnash.uikit.team.activity.NormalTeamInfoActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:30:9-35:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:35:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:30:9-35:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:33:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:33:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:35:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:32:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:32:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:34:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:34:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:31:13-90
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:31:13-90
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamInfoActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:36:9-41:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:41:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:36:9-41:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:39:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:39:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:41:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:38:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:38:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:40:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:37:13-92
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:37:13-92
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamMemberActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:42:9-47:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:47:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:42:9-47:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:45:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:45:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:47:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:44:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:44:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:46:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:46:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:43:13-94
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:43:13-94
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamAnnounceActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:48:9-53:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:53:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:48:9-53:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:51:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:51:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:53:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:50:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:50:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:52:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:52:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:49:13-96
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:49:13-96
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamMemberInfoActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:54:9-59:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:59:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:54:9-59:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:57:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:57:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:59:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:56:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:56:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:58:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:58:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:55:13-98
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:55:13-98
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamNicknameActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:60:9-65:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:65:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:60:9-65:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:63:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:63:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:65:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:62:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:62:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:64:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:64:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:61:13-96
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:61:13-96
 activity#com.netease.sdfnash.uikit.team.activity.AdvancedTeamCreateAnnounceActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:66:9-71:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:71:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:66:9-71:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:69:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:69:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:71:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:68:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:68:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:70:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:70:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:67:13-102
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:67:13-102
 activity#com.netease.sdfnash.uikit.team.activity.TeamPropertySettingActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:72:9-77:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:77:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:72:9-77:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:75:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:75:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:77:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:74:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:74:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:76:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:76:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:73:13-95
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:73:13-95
 activity#com.netease.sdfnash.uikit.contact_selector.activity.ContactSelectActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:80:9-86:67
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:86:13-64
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:80:9-86:67
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:84:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:84:13-49
 	android:label
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:83:13-53
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:83:13-53
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:86:13-64
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:82:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:82:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:85:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:85:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:81:13-101
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:81:13-101
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.PickImageActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:89:9-92:59
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:89:9-92:59
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:91:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:91:13-49
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:92:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:92:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:90:13-100
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:90:13-100
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.CropImageActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:93:9-96:59
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:93:9-96:59
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:95:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:95:13-49
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:96:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:96:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:94:13-100
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:94:13-100
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.PickerAlbumActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:97:9-100:59
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:97:9-100:59
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:99:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:99:13-49
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:100:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:100:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:98:13-102
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:98:13-102
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.PickerAlbumPreviewActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:101:9-104:59
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:101:9-104:59
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:103:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:103:13-49
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:104:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:104:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:102:13-109
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:102:13-109
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.PreviewImageFromLocalActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:105:9-110:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:110:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:105:9-110:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:108:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:108:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:110:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:107:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:107:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:109:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:109:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:106:13-112
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:106:13-112
 activity#com.netease.sdfnash.uikit.common.media.picker.activity.PreviewImageFromCameraActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:111:9-117:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:117:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:111:9-117:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:115:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:115:13-49
 	android:label
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:114:13-53
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:114:13-53
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:117:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:113:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:113:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:116:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:116:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:112:13-113
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:112:13-113
 activity#com.netease.sdfnash.uikit.session.activity.CaptureVideoActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:120:9-125:70
-	android:windowSoftInputMode
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:125:13-67
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:120:9-125:70
 	android:screenOrientation
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:123:13-49
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:123:13-49
+	android:windowSoftInputMode
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:125:13-67
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:122:13-63
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:122:13-63
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:124:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:124:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:121:13-91
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:121:13-91
 activity#com.netease.sdfnash.uikit.session.activity.WatchVideoActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:126:9-130:48
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:126:9-130:48
 	android:label
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:129:13-47
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:129:13-47
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:128:13-74
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:128:13-74
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:130:13-45
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:130:13-45
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:127:13-89
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:127:13-89
 activity#com.netease.sdfnash.uikit.session.activity.WatchMessagePictureActivity
-ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:133:9-136:59
+ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:133:9-136:59
 	android:configChanges
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:135:13-51
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:135:13-51
 	android:theme
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:136:13-56
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:136:13-56
 	android:name
-		ADDED from [nim_demo:uikit:unspecified] /Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:134:13-98
+		ADDED from [nim_demo:uikit:unspecified] /Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/exploded-aar/nim_demo/uikit/unspecified/AndroidManifest.xml:134:13-98

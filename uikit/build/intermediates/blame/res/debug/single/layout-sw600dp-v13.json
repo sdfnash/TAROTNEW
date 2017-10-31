@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
-        "source": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+        "merged": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/uikit/build/intermediates/exploded-aar/com.android.support/design/23.3.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]

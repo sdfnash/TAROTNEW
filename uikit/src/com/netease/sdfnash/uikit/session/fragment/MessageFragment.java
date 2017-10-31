@@ -7,18 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.netease.sdfnash.uikit.R;
-import com.netease.sdfnash.uikit.common.fragment.TFragment;
-import com.netease.sdfnash.uikit.session.SessionCustomization;
-import com.netease.sdfnash.uikit.session.actions.BaseAction;
-import com.netease.sdfnash.uikit.session.actions.ImageAction;
-import com.netease.sdfnash.uikit.session.actions.LocationAction;
-import com.netease.sdfnash.uikit.session.actions.VideoAction;
-import com.netease.sdfnash.uikit.session.constant.Extras;
-import com.netease.sdfnash.uikit.session.module.Container;
-import com.netease.sdfnash.uikit.session.module.ModuleProxy;
-import com.netease.sdfnash.uikit.session.module.input.InputPanel;
-import com.netease.sdfnash.uikit.session.module.list.MessageListPanel;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.Observer;
 import com.netease.nimlib.sdk.msg.MsgService;
@@ -26,6 +14,16 @@ import com.netease.nimlib.sdk.msg.MsgServiceObserve;
 import com.netease.nimlib.sdk.msg.constant.SessionTypeEnum;
 import com.netease.nimlib.sdk.msg.model.IMMessage;
 import com.netease.nimlib.sdk.msg.model.MessageReceipt;
+import com.netease.sdfnash.uikit.R;
+import com.netease.sdfnash.uikit.common.fragment.TFragment;
+import com.netease.sdfnash.uikit.session.SessionCustomization;
+import com.netease.sdfnash.uikit.session.actions.BaseAction;
+import com.netease.sdfnash.uikit.session.actions.ImageAction;
+import com.netease.sdfnash.uikit.session.constant.Extras;
+import com.netease.sdfnash.uikit.session.module.Container;
+import com.netease.sdfnash.uikit.session.module.ModuleProxy;
+import com.netease.sdfnash.uikit.session.module.input.InputPanel;
+import com.netease.sdfnash.uikit.session.module.list.MessageListPanel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -220,8 +218,8 @@ public class MessageFragment extends TFragment implements ModuleProxy {
     protected List<BaseAction> getActionList() {
         List<BaseAction> actions = new ArrayList<>();
         actions.add(new ImageAction());
-        actions.add(new VideoAction());
-        actions.add(new LocationAction());
+        //actions.add(new VideoAction());
+        //actions.add(new LocationAction());
 
         if (customization != null && customization.actions != null) {
             actions.addAll(customization.actions);

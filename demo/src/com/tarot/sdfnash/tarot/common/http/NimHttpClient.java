@@ -255,7 +255,7 @@ public class NimHttpClient {
                 // add body
                 Part[] part = new Part[3];
                 part[0] = new FilePart("photo", file);
-                part[1] = new StringPart("uid", Preferences.getUserId());
+                part[1] = new StringPart("tid", Preferences.getUserId());
                 part[2] = new StringPart("ticket", Preferences.getUserToken());
                 MultipartEntity entity = new MultipartEntity(part);
                 if (entity != null) {

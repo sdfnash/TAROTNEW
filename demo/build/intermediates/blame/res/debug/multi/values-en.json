@@ -1,23 +1,23 @@
 [
     {
-        "outputFile": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/build/intermediates/res/merged/debug/values-en/values-en.xml",
+        "outputFile": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/res/merged/debug/values-en/values-en.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 41,
-                    "endOffset": 92
+                    "endColumn": 40,
+                    "endOffset": 91
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 57,
-                        "endColumn": 41,
-                        "endOffset": 94
+                        "endColumn": 40,
+                        "endOffset": 93
                     }
                 }
             },
@@ -25,18 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 97,
+                    "startOffset": 96,
                     "endColumn": 92,
-                    "endOffset": 185
+                    "endOffset": 184
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 100,
+                        "startOffset": 99,
                         "endColumn": 92,
-                        "endOffset": 188
+                        "endOffset": 187
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 190,
+                    "startOffset": 189,
                     "endColumn": 93,
-                    "endOffset": 279
+                    "endOffset": 278
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 194,
+                        "startOffset": 193,
                         "endColumn": 93,
-                        "endOffset": 283
+                        "endOffset": 282
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 284,
+                    "startOffset": 283,
                     "endColumn": 81,
-                    "endOffset": 361
+                    "endOffset": 360
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 289,
+                        "startOffset": 288,
                         "endColumn": 81,
-                        "endOffset": 366
+                        "endOffset": 365
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 366,
+                    "startOffset": 365,
                     "endColumn": 88,
-                    "endOffset": 450
+                    "endOffset": 449
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1013,
+                        "startOffset": 1012,
                         "endColumn": 88,
-                        "endOffset": 1097
+                        "endOffset": 1096
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 455,
+                    "startOffset": 454,
                     "endColumn": 85,
-                    "endOffset": 536
+                    "endOffset": 535
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 653,
+                        "startOffset": 652,
                         "endColumn": 85,
-                        "endOffset": 734
+                        "endOffset": 733
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 541,
+                    "startOffset": 540,
                     "endColumn": 90,
-                    "endOffset": 627
+                    "endOffset": 626
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 372,
+                        "startOffset": 371,
                         "endColumn": 90,
-                        "endOffset": 458
+                        "endOffset": 457
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 632,
+                    "startOffset": 631,
                     "endColumn": 103,
-                    "endOffset": 731
+                    "endOffset": 730
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 464,
+                        "startOffset": 463,
                         "endColumn": 103,
-                        "endOffset": 563
+                        "endOffset": 562
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 736,
+                    "startOffset": 735,
                     "endColumn": 82,
-                    "endOffset": 814
+                    "endOffset": 813
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 569,
+                        "startOffset": 568,
                         "endColumn": 82,
-                        "endOffset": 647
+                        "endOffset": 646
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 819,
+                    "startOffset": 818,
                     "endColumn": 83,
-                    "endOffset": 898
+                    "endOffset": 897
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 740,
+                        "startOffset": 739,
                         "endColumn": 83,
-                        "endOffset": 819
+                        "endOffset": 818
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 903,
+                    "startOffset": 902,
                     "endColumn": 93,
-                    "endOffset": 992
+                    "endOffset": 991
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 825,
+                        "startOffset": 824,
                         "endColumn": 93,
-                        "endOffset": 914
+                        "endOffset": 913
                     }
                 }
             },
@@ -215,18 +215,251 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 997,
+                    "startOffset": 996,
                     "endColumn": 91,
-                    "endOffset": 1084
+                    "endOffset": 1083
                 },
                 "from": {
-                    "file": "/Users/bjhl/Desktop/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "file": "/Users/sdfnash/Desktop/留存/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 920,
+                        "startOffset": 919,
                         "endColumn": 91,
-                        "endOffset": 1007
+                        "endOffset": 1006
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/build/intermediates/res/merged/debug/values-en/values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 40,
+                    "endOffset": 91
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 40,
+                        "endOffset": 93
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 96,
+                    "endColumn": 92,
+                    "endOffset": 184
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 92,
+                        "endOffset": 187
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 189,
+                    "endColumn": 93,
+                    "endOffset": 278
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 193,
+                        "endColumn": 93,
+                        "endOffset": 282
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 283,
+                    "endColumn": 81,
+                    "endOffset": 360
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 288,
+                        "endColumn": 81,
+                        "endOffset": 365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 365,
+                    "endColumn": 88,
+                    "endOffset": 449
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1012,
+                        "endColumn": 88,
+                        "endOffset": 1096
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 454,
+                    "endColumn": 85,
+                    "endOffset": 535
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 652,
+                        "endColumn": 85,
+                        "endOffset": 733
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 540,
+                    "endColumn": 90,
+                    "endOffset": 626
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 371,
+                        "endColumn": 90,
+                        "endOffset": 457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 631,
+                    "endColumn": 103,
+                    "endOffset": 730
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 463,
+                        "endColumn": 103,
+                        "endOffset": 562
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 735,
+                    "endColumn": 82,
+                    "endOffset": 813
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 568,
+                        "endColumn": 82,
+                        "endOffset": 646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 818,
+                    "endColumn": 83,
+                    "endOffset": 897
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 739,
+                        "endColumn": 83,
+                        "endOffset": 818
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 902,
+                    "endColumn": 93,
+                    "endOffset": 991
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 824,
+                        "endColumn": 93,
+                        "endOffset": 913
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 996,
+                    "endColumn": 91,
+                    "endOffset": 1083
+                },
+                "from": {
+                    "file": "/Users/bjhl/AndroidStudioProjects/nim_demo/nim_demo/nim_demo/demo/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 919,
+                        "endColumn": 91,
+                        "endOffset": 1006
                     }
                 }
             }

@@ -282,7 +282,7 @@
     <color name="taLuoTheme">#68228B</color>
     <color name="taluo_blue">#3F51B5</color>
     <color name="taluo_red">#FF4081</color>
-    <color name="text_is_select">#660099</color>
+    <color name="text_is_select">#2760a5</color>
     <color name="text_not_select">#616161</color>
     <color name="title_bg">#3F51B5</color>
     <color name="title_color_01d9ae">#01D9AE</color>
@@ -600,7 +600,7 @@
     <string name="advanced_team">高级群</string>
     <string name="agree">同意</string>
     <string name="alias">备注名</string>
-    <string name="app_name">塔罗说</string>
+    <string name="app_name">塔罗说for塔罗师</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="avchat_audio_call_request">请求通话</string>
     <string name="avchat_audio_call_wifi_unavailable_tip">当前非WiFi环境，每分钟将产生约0.5M的流量</string>
@@ -688,6 +688,7 @@
     <string name="create">新建</string>
     <string name="create_advanced_team">创建高级群</string>
     <string name="create_normal_team">创建讨论组</string>
+    <string name="create_order">生成订单</string>
     <string name="create_team">创建群</string>
     <string name="create_team_activity">创建群聊</string>
     <string name="create_team_failed">创建失败</string>
@@ -802,7 +803,7 @@
     <string name="main_msg_list_sticky_on_top">置顶该聊天</string>
     <string name="main_msg_unread_msg_count">[%d条]</string>
     <string name="main_tab_contact">消息</string>
-    <string name="main_tab_session">发现</string>
+    <string name="main_tab_session">状态</string>
     <string name="male">男</string>
     <string name="mark_member_level">设置成员等级</string>
     <string name="memory_out">内存不足</string>
@@ -825,6 +826,7 @@
     <string name="multiport_manager">多端登录管理</string>
     <string name="mute_duration">禁言时间，单位s</string>
     <string name="mute_msg">设置禁言</string>
+    <string name="my_collection">我的关注</string>
     <string name="my_comment">我的评价</string>
     <string name="my_location">我的位置</string>
     <string name="my_order">我的订单</string>

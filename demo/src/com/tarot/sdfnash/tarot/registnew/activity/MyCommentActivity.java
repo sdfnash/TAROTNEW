@@ -168,8 +168,8 @@ public class MyCommentActivity extends UI {
 
 
     public String timeTrans(long time){
-        SimpleDateFormat sdf = new SimpleDateFormat("MM-dd HH:mm");
-        String date = sdf.format(new Date(time));
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        String date = sdf.format(new Date(time*1000));
         return date;
     }
 
@@ -197,8 +197,9 @@ public class MyCommentActivity extends UI {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(MyCommentActivity.this, CommitCommentActivity.class);
-                    i.putExtra("tId", tID);
+                    i.putExtra("tId", item.getTls_id());
                     i.putExtra("cmtId", item.getId());
+                    i.putExtra("type",CommitCommentActivity.CHANGE_COMMENT);
                     startActivityForResult(i, 0x01);
                 }
             });
@@ -209,6 +210,8 @@ public class MyCommentActivity extends UI {
                     RegistHttpClient.getInstance().deleteCode(Preferences.getUserId(), Preferences.getUserToken(), item.getId(), new RegistHttpClient.DeleteHttpCallBack<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
+
+                            Toast.makeText(MyCommentActivity.this,"删除成功",Toast.LENGTH_SHORT).show();
                             refreshData();
                         }
 
@@ -221,11 +224,11 @@ public class MyCommentActivity extends UI {
 
                 }
             });
-            headImageView.loadBuddyAvatar(item.getPhoto_s());
-            mTvName.setText(item.getNickname());
+            headImageView.doLoadImage(true,item.getId(),item.getTls_photo(),HeadImageView.DEFAULT_AVATAR_THUMB_SIZE);
+            mTvName.setText(item.getTls_name());
             mTvTime.setText(timeTrans(Long.parseLong(item.getAdd_date())));
             mTvComment.setText(item.getComment());
-            if (item.getU_id().equals(Preferences.getUserId())) {
+            if (Preferences.getUserId().equals(item.getU_id())) {
                 mBtnChange.setVisibility(View.GONE);
                 mBtnDelete.setVisibility(View.GONE);
             } else {

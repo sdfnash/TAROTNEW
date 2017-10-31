@@ -1,14 +1,14 @@
 package com.tarot.sdfnash.tarot.main.model;
 
 import com.tarot.sdfnash.tarot.R;
-import com.tarot.sdfnash.tarot.main.fragment.FindingFragment;
 import com.tarot.sdfnash.tarot.main.fragment.MainTabFragment;
 import com.tarot.sdfnash.tarot.main.fragment.MineNewFragment;
 import com.tarot.sdfnash.tarot.main.fragment.SessionListFragment;
+import com.tarot.sdfnash.tarot.main.fragment.StatusFragment;
 import com.tarot.sdfnash.tarot.main.reminder.ReminderId;
 
 public enum MainTab {
-    RECENT_CONTACTS(0, ReminderId.SESSION, FindingFragment.class, R.string.main_tab_session, R.layout.fragment_finding),
+    RECENT_CONTACTS(0, ReminderId.SESSION, StatusFragment.class, R.string.main_tab_session, R.layout.fragment_status),
     CONTACT(1, ReminderId.CONTACT, SessionListFragment.class, R.string.main_tab_contact, R.layout.session_list),
     CHAT_ROOM(2, ReminderId.INVALID, MineNewFragment.class, R.string.chat_room, R.layout.fragment_mine_new);
 

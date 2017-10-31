@@ -27,13 +27,13 @@ public class Preferences {
     }
     public static String getUserAccount() {
         return getString(KEY_USER_ACCOUNT);
-    }
-    public static String getUserId() {
+    }//shoujihao
+    public static String getUserId() {//use_id
         return getString(KEY_USER_ID);
     }
     public static String getYXAcount() {
         return getString(KEY_YX_ACCOUNT);
-    }
+    }//yunxin_id
 
     public static void saveUserToken(String token) {
         saveString(KEY_USER_TOKEN, token);
@@ -44,7 +44,7 @@ public class Preferences {
     }
     public static String getUserToken() {
         return getString(KEY_USER_TOKEN);
-    }
+    }//ticket
 
     public static String getYXToken() {
         return getString(KEY_YX_TOKEN);

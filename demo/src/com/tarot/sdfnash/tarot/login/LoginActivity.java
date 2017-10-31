@@ -33,7 +33,6 @@ import com.netease.sdfnash.uikit.common.util.log.LogUtil;
 import com.netease.sdfnash.uikit.common.util.string.MD5;
 import com.netease.sdfnash.uikit.common.util.sys.NetworkUtil;
 import com.netease.sdfnash.uikit.common.util.sys.ScreenUtil;
-import com.netease.sdfnash.uikit.model.ToolBarOptions;
 import com.netease.sdfnash.uikit.permission.MPermission;
 import com.netease.sdfnash.uikit.permission.annotation.OnMPermissionDenied;
 import com.netease.sdfnash.uikit.permission.annotation.OnMPermissionGranted;
@@ -46,6 +45,7 @@ import com.tarot.sdfnash.tarot.registnew.Model.LoginModel;
 import com.tarot.sdfnash.tarot.registnew.Model.RegistModel;
 import com.tarot.sdfnash.tarot.registnew.RegistHttpClient;
 import com.tarot.sdfnash.tarot.registnew.TimeDownButton;
+import com.tarot.sdfnash.tarot.registnew.activity.UserInfoActivity;
 
 /**
  * 登录/注册界面
@@ -119,10 +119,10 @@ public class LoginActivity extends UI implements OnKeyListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        ToolBarOptions options = new ToolBarOptions();
-        options.isNeedNavigate = false;
-        options.logoId = R.drawable.actionbar_white_logo_space;
-        setToolBar(R.id.toolbar, options);
+//        ToolBarOptions options = new ToolBarOptions();
+//        options.isNeedNavigate = false;
+//        options.logoId = R.drawable.actionbar_white_logo_space;
+//        setToolBar(R.id.toolbar, options);
 
         requestBasicPermission();
 
@@ -152,7 +152,7 @@ public class LoginActivity extends UI implements OnKeyListener {
 
     @OnMPermissionGranted(BASIC_PERMISSION_REQUEST_CODE)
     public void onBasicPermissionSuccess() {
-        Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, "授权成功", Toast.LENGTH_SHORT).show();
     }
 
     @OnMPermissionDenied(BASIC_PERMISSION_REQUEST_CODE)
@@ -312,6 +312,8 @@ public class LoginActivity extends UI implements OnKeyListener {
 //                //test
 //                yx_accid="tls_usr_13";
 //                yx_token="96145788b70c15b3417af3034d7f52e5";
+                Preferences.saveUserNickName(dataBean.getNickname());
+                Preferences.saveUserPhoto(dataBean.getPhoto());
                 loginRequest = NIMClient.getService(AuthService.class).login(new LoginInfo(yx_accid, yx_token));
                 loginRequest.setCallback(new RequestCallback<LoginInfo>() {
                     @Override
@@ -334,16 +336,16 @@ public class LoginActivity extends UI implements OnKeyListener {
                         // 构建缓存
                         DataCacheManager.buildDataCacheAsync();
 
-//                        if(!TextUtils.isEmpty(Preferences.getKeyUserNickname())&&!TextUtils.isEmpty(Preferences.getUserUsePhoto())){
-//                            // 进入主界面
-//                            MainActivity.start(LoginActivity.this, null);
-//                            finish();
-//                        }else{
-//                            UserInfoActivity.startFromLogin(LoginActivity.this,null);
-//                        }
+                        if(!TextUtils.isEmpty(Preferences.getKeyUserNickname())&&!TextUtils.isEmpty(Preferences.getUserUsePhoto())){
+                            // 进入主界面
+                            MainActivity.start(LoginActivity.this, null);
+                            finish();
+                        }else{
+                            UserInfoActivity.startFromLogin(LoginActivity.this,null);
+                        }
 
                         // 进入主界面
-                        MainActivity.start(LoginActivity.this, null);
+                     //   MainActivity.start(LoginActivity.this, null);
                     }
 
                     @Override

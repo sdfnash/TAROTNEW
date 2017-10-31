@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context="com.tarot.sdfnash.tarot.registnew.activity.CreateOrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+        </android.support.v7.widget.Toolbar>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/grey_1"
+            ></View>
+    </android.support.design.widget.AppBarLayout>
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:id="@+id/radio_group_comment"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="4"-->
+        <!--&gt;-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="全部"-->
+            <!--android:id="@+id/radio_comment_all"-->
+            <!--android:textSize="15sp"-->
+            <!--android:button="@null"-->
+            <!--android:layout_gravity="center"-->
+
+            <!--android:layout_weight="1"-->
+            <!--android:checked="true"-->
+            <!--android:textColor="@color/selectable_color"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--/>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/grey_1"-->
+            <!--&gt;</View>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="待支付"-->
+            <!--android:id="@+id/radio_comment_good"-->
+            <!--android:textSize="15sp"-->
+            <!--android:button="@null"-->
+            <!--android:layout_gravity="center"-->
+
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/selectable_color"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/grey_1"-->
+            <!--&gt;</View>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="待评价"-->
+            <!--android:id="@+id/radio_comment_bad"-->
+            <!--android:textSize="15sp"-->
+            <!--android:button="@null"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/selectable_color"-->
+
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="10dp"-->
+            <!--/>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/grey_1"-->
+            <!--&gt;</View>-->
+        <!--<RadioButton-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="已完成"-->
+            <!--android:id="@+id/radio_comment_middle"-->
+            <!--android:textSize="15sp"-->
+            <!--android:button="@null"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/selectable_color"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</RadioGroup>-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入价格"
+        android:id="@+id/edit_price"
+        android:inputType="numberDecimal"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_item"
+        ></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_select"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_input"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:visibility="gone"
+
+        android:textSize="20sp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_create"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="生成订单"
+        android:visibility="gone"
+
+        android:padding="20dp"
+        />
+
+</LinearLayout>

@@ -20,7 +20,9 @@ public class CommentShowModel  implements Serializable{
     private String u_id;
     private String nickname;
     private String photo_s;
-
+    private String tls_id;
+    private String tls_photo;
+    private String tls_name;
     /**
      * add_date : 1470929420
      * modify_date : 1470929421
@@ -33,6 +35,38 @@ public class CommentShowModel  implements Serializable{
     private String cate;
     private int can_edit;
 
+
+    public String getTls_id() {
+        return tls_id;
+    }
+
+    public void setTls_id(String tls_id) {
+        this.tls_id = tls_id;
+    }
+
+    public String getTls_photo() {
+        return tls_photo;
+    }
+
+    public void setTls_photo(String tls_photo) {
+        this.tls_photo = tls_photo;
+    }
+
+    public String getT_id() {
+        return tls_id;
+    }
+
+    public void setT_id(String tls_id) {
+        this.tls_id = tls_id;
+    }
+
+    public String getTls_name() {
+        return tls_name;
+    }
+
+    public void setTls_name(String tls_name) {
+        this.tls_name = tls_name;
+    }
 
     public String getId() {
         return id;
